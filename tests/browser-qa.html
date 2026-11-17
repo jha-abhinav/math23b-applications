@@ -1,0 +1,11 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Coastal Calculus browser QA</title><style>body{font:15px system-ui;padding:30px;background:#f6f4ec;color:#173d38}h1{font:30px Georgia}li{padding:8px;border-bottom:1px solid #ddd}.pass{color:#1e6846}.fail{color:#a22}iframe{position:absolute;left:-20000px;top:0;width:390px;height:844px;border:0}#desktop{width:1440px}</style></head><body><h1>Coastal Calculus — real browser checks</h1><p id="summary">Waiting for worksheet pages…</p><ol id="results"></ol><script>
+let received=0,failed=0,checks=0;
+window.addEventListener('message',event=>{
+ const r=event.data;if(!r||r.type!=='coastal-qa'||![...document.querySelectorAll('iframe')].some(f=>f.contentWindow===event.source))return;
+ received++;if(r.failed)failed++;checks+=r.checks.length;
+ const li=document.createElement('li');li.className=r.failed?'fail':'pass';li.textContent=(r.failed?'FAIL':'PASS')+' — Week '+r.week+(r.desktop?' desktop':' mobile')+': '+r.checks.length+' checks. '+(r.failed?r.checks.at(-1):'Forms, progress, and layout verified.');document.getElementById('results').append(li);
+ document.getElementById('summary').textContent=(failed?'FAILURES: '+failed:'ALL RECEIVED CHECKS PASSED')+' · '+received+'/10 page runs · '+checks+' assertions.';document.title=failed?'QA FAIL':received===10?'QA PASS':'QA running';
+});
+for(let n=2;n<=10;n++){const f=document.createElement('iframe');f.src='browser-qa-week-'+String(n).padStart(2,'0')+'.html'+(new URLSearchParams(location.search).has('reload')?'?reload=1':'');f.title='Week '+n+' mobile QA';document.body.append(f)}
+const f=document.createElement('iframe');f.id='desktop';f.src='browser-qa-week-08.html?desktop=1';f.title='Desktop QA';document.body.append(f);
+</script></body></html>
