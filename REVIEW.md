@@ -4,7 +4,7 @@ Designed by [Abhinav Jha](https://abhinav_jha.codeberg.page/). Status of the reb
 
 ## Content
 - 45 problems (9 weeks × 4 core + 1 extension), 135 checked parts, two hints per part, a full solution and discussion answer per problem.
-- 60 cited sources (see DATA_SOURCES.md), 35 openly licensed photographs with credits, 45 model diagrams drawn from the problem equations, and a home-page map of the places the problems visit.
+- 61 cited sources (see DATA_SOURCES.md), 35 openly licensed photographs with credits, 45 model diagrams drawn from the problem equations, and a home-page map of the places the problems visit.
 - Every core skill from the traditional worksheets is mapped to a core problem; see SKILL_COVERAGE.md for where each one is practiced.
 
 ## Verification

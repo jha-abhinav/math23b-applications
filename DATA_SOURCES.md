@@ -1,6 +1,6 @@
 # Data provenance
 
-Every published number in Around the World in 80 Integrals comes from one of the 60 sources below. Source pages were consulted in November 2026. Secondary sources are labeled in their notes. Assumed shapes, fields, and parameters appear only in each problem's "We assume" list, never here.
+Every published number in Around the World in 80 Integrals comes from one of the 61 sources below. Source pages were consulted in November 2026. Secondary sources are labeled in their notes. Assumed shapes, fields, and parameters appear only in each problem's "We assume" list, never here.
 
 ## NOAA Monterey Harbor tidal datums
 
@@ -630,17 +630,34 @@ Every published number in Around the World in 80 Integrals comes from one of the
 | Storm-force (25 m/s) wind radius | 150 km |
 | Gale (15 m/s) wind radius | 460 km north, 330 km south |
 
-## FINA Water Polo Rules 2013–2017, rule WP 3 (The Ball)
+## IMOS Deep Water Arrays: the East Australian Current (EAC) array
 
-[https://dunfermline-wpc.co.uk/coaches_zone/FINA_WP_Rules_2013-2017.pdf](https://dunfermline-wpc.co.uk/coaches_zone/FINA_WP_Rules_2013-2017.pdf) · `waterpolo.csv` · used in w09-p4
+[https://imos.org.au/facility/deep-water-moorings/deep-water-arrays](https://imos.org.au/facility/deep-water-moorings/deep-water-arrays) · `imoseac.csv` · used in w09-p4
 
-*Published equipment rules (club-hosted copy).* FINA (now World Aquatics) rules as reproduced by Dunfermline Water Polo Club. Current World Aquatics rules move these specifications to an appendix. The thin spherical shell is a model of the ball.
+*Published program description (Integrated Marine Observing System, operated by CSIRO).* Integrated Marine Observing System (Australia), accessed November 18, 2026. Water depths and float clusters come from the IMOS 2015 deployment drawings, data.aodn.org.au/IMOS/DWM/Deployments/Schematic_EAC_array.pdf (drawing titles and the M4 sheet).
 
-| Rule | Published value |
+| Item | Published value |
 | --- | --- |
-| WP 3.2 weight of the ball | 400 to 450 g |
-| WP 3.3 circumference (men) | 0.68 to 0.71 m |
-| WP 3.3 pressure (men) | 90 to 97 kPa |
+| Moorings in the EAC array | 6, from the continental slope to the abyssal waters off Brisbane |
+| Status | The array ceased in 2023 |
+| 2015 drawings, water depth of M1 to M6 | 500, 2000, 3200, 4200, 4700, 4800 m |
+| Mooring M4 design depth | 4259 m |
+| M4 float cluster near the top | 16 glass floats, 17-inch |
+
+## VITROVEX glass floatation spheres (Nautilus Marine Service)
+
+[https://www.vitrovex.com/en/overview-flotation-housings-spheres](https://www.vitrovex.com/en/overview-flotation-housings-spheres) · `vitrovex.csv` · used in w09-p4
+
+*Published manufacturer specifications.* Nautilus Marine Service GmbH, overview page and datasheet (last update 03/2020); the datasheet states that its figures are based on seawater of 1.025 g/cm³. The IMOS drawings say only “glass floats 17-inch” without naming a maker, so this model stands in as a representative 17-inch deep-sea sphere.
+
+| Quantity (model FS-6700-17) | Published value |
+| --- | --- |
+| Depth rating | 6700 m |
+| Outer diameter | 17 in (432 mm) |
+| Wall thickness | 14 mm |
+| Weight in air | 17 kg |
+| Net buoyancy | 26 kg |
+| Density basis | seawater 1.025 g/cm³ |
 
 ## CFOO Sea Atlas: Agulhas rings
 
