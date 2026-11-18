@@ -1,0 +1,5 @@
+Scan group,Elevation angles (deg),Range (km)
+A,"0.3, 1.5, 3, 5, 9",250
+B,"0.3, 2, 4",100
+C,"2, 7, 11, 15, 25, 45",100
+RHI,0.0 to 60.0,150

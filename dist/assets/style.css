@@ -55,3 +55,8 @@ html.weeks-collapsed .sidebar-reopen{display:inline-flex}
 html.weeks-collapsed .learning-layout{grid-template-columns:minmax(0,1fr);max-width:1040px}
 @media(max-width:760px){.sidebar-toggle{margin:0 0 8px}html.weeks-collapsed .learning-layout{max-width:none}}
 @media print{.sidebar-toggle,.sidebar-reopen{display:none!important}}
+math-field.answer-math[hidden],.answer-input-wrap>input[hidden]{display:none!important}
+/* Home-page world map. */
+.world-art{margin:0;padding:14px 14px 10px;background:var(--white)}
+.world-art img{display:block;width:100%;height:auto}
+.world-art figcaption{font-size:11px;color:var(--muted);margin-top:8px;text-align:center}

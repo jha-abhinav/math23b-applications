@@ -1,0 +1,5 @@
+Projection,Published formula
+Mercator,"$x=R(\lambda-\lambda_0)$, $y=R\ln\tan(\pi/4+\phi/2)$"
+Mercator scale factor,$h=k=\sec\phi$
+Mercator areal scale factor,$\sec^2\phi$
+Cylindrical equal-area (standard parallel 0°),"$x=R(\lambda-\lambda_0)$, $y=R\sin\phi$"

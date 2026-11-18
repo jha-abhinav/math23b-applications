@@ -1,0 +1,5 @@
+Item,Published form
+Inputs,"two independent uniform random numbers in (0, 1)"
+First output,$\sqrt{-2\ln x_1}\cos(2\pi x_2)$
+Second output,$\sqrt{-2\ln x_1}\sin(2\pi x_2)$
+Result,two independent standard normal numbers

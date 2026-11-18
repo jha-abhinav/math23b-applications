@@ -37,6 +37,12 @@ for(const [q,input,message] of [[sphere,'\\placeholder{}\\sin\\phi','Fill in eve
 console.log(`Passed ${rounded} rounded-decimal cases, tolerance edge cases, and LaTeX/Unicode input cases.`);
 console.log(`Passed ${count} correct-answer cases, ${count} incorrect-answer cases, empty-input cases, equivalent potentials, parser precedence, and rejection tests.`);
 
-const curlQuestion=data.weeks.at(-1).problems.at(-1).questions[1];
-assert.equal(C.check(curlQuestion,'0, x^2/2+2*y, y^2/2-x*z+2*z').correct,true,'Alternative vector potential');
-assert.equal(C.check(curlQuestion,'0, x^2/2, y^2/2+x*z').correct,false,'Wrong curl sign');
+// Vector potentials: any A with curl A = F is accepted (here the expected A plus the gradient of yz),
+// while a sign-flipped A is rejected.
+const curlQuestions=data.weeks.flatMap(w=>w.problems.flatMap(p=>p.questions.filter(q=>q.semantic==='curl')));
+assert.ok(curlQuestions.length>0,'at least one vector-potential question');
+for(const q of curlQuestions){
+ const [a0,a1,a2]=q.expected;
+ assert.equal(C.check(q,[a0,'('+a1+')+z','('+a2+')+y'].join(', ')).correct,true,q.id+' alternative vector potential');
+ assert.equal(C.check(q,['-('+a0+')','-('+a1+')','-('+a2+')'].join(', ')).correct,false,q.id+' wrong curl sign');
+}
