@@ -7,7 +7,8 @@ ROOT=Path(__file__).resolve().parents[1];DIST=ROOT/'dist'
 assert not list(DIST.glob('browser-qa*.html')),'Remove temporary QA pages with tests/prepare_browser_qa.py --clean'
 raw=(DIST/'assets/workbook.js').read_text();data=json.loads(re.sub(r';\s*$','',re.sub(r'^window\.WORKBOOK=','',raw)))
 assert [w['week'] for w in data['weeks']]==list(range(2,11))
-assert len(data['sources'])==7
+used_sources={k for w in data['weeks'] for p in w['problems'] for k in p['sources']}
+assert set(data['sources'])==used_sources,('unused or missing sources',set(data['sources'])^used_sources)
 assert sum(len(w['problems']) for w in data['weeks'])==45
 questions=[q for w in data['weeks'] for p in w['problems'] for q in p['questions']]
 assert len(questions)==135
@@ -55,6 +56,13 @@ for week in data['weeks']:
   pdf=DIST/'downloads'/f'application_worksheet_week_{n:02d}{suffix}.pdf'
   assert pdf.read_bytes().startswith(b'%PDF-'),pdf
 for key in data['sources']:assert (DIST/'downloads/data'/f'{key}.csv').is_file()
+# Photos must carry attribution; model panels need all three parts; figures must exist.
+for w in data['weeks']:
+ for p in w['problems']:
+  ph=p.get('photo')
+  if ph:assert ph.get('credit') and ph.get('license') and ph.get('page','').startswith('https://commons.wikimedia.org/') and (DIST/'assets/photos'/ph['file']).is_file(),(p['id'],'photo attribution')
+  if p.get('figure'):assert (DIST/'assets/figures'/(p['figure']['file']+'.svg')).is_file() and p['figure'].get('alt'),(p['id'],'figure')
+  if p.get('modelSpec'):assert all(p['modelSpec'].get(k) for k in ('data','assume','model')),(p['id'],'model panel')
 assert (DIST/'.nojekyll').exists()
 for file in DIST.rglob('*'):assert not file.is_symlink(),file
 # MathJax loads its core, TeX input, CHTML output, and fonts at runtime, so check the whole vendored bundle.
@@ -63,4 +71,8 @@ for name,size in manifest['files'].items():assert (MJ/name).is_file() and (MJ/na
 config=(DIST/'assets/mathjax-config.js').read_text()
 for component in re.findall(r"'((?:input|output)/[\w-]+)'",config):assert (MJ/(component+'.js')).is_file(),('MathJax component',component)
 assert not re.search(r'https?:|//[a-z]',config),'MathJax must stay self-hosted'
-print(f'PASS: 11 pages, 45 problems, 135 forms, 45 discussions, 18 PDF downloads, 7 CSV datasets, {links} local links/assets, and GitHub project-subpath compatibility.')
+# The visual math editor (MathLive) is self-hosted with its fonts and license.
+ML=DIST/'assets/vendor/mathlive'
+assert (ML/'mathlive.min.js').is_file() and (ML/'LICENSE.txt').is_file() and len(list((ML/'fonts').glob('*.woff2')))>=19,'MathLive bundle'
+assert (DIST/'assets/mathfield.js').is_file()
+print(f'PASS: 11 pages, 45 problems, 135 forms, 45 discussions, 18 PDF downloads, {len(data['sources'])} CSV datasets, {links} local links/assets, and GitHub project-subpath compatibility.')

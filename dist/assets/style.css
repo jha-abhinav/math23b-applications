@@ -7,3 +7,51 @@
 @media print{body{background:white;color:black}.site-header,.site-footer,.week-sidebar,.week-tools,.week-progress,.answer-actions,.feedback,.hint-panel,.reflection textarea,.weekly-reference,.full-solution:not([open]){display:none!important}.learning-layout{display:block;padding:0}.problem-card{break-inside:avoid;border:0;border-bottom:1px solid #aaa;padding:15px 0}.week-intro h1{font-size:30px}.math-inline img,.math-display img{max-width:100%}.week-sources{break-before:page}input{border:0!important;border-bottom:1px solid #aaa!important}.source-card{break-inside:avoid}.sources-main{max-width:none}}
 
 .question h4 .part-label{margin-right:10px;vertical-align:middle}
+/* Problem photo and the always-visible "Building the model" panel. */
+.problem-photo{margin:14px 0 22px}
+.problem-photo img{display:block;width:100%;height:300px;object-fit:contain;background:#ece9df;border-radius:6px}
+.problem-photo figcaption{font-size:11px;color:var(--muted);margin-top:6px}
+.model-panel{margin:24px 0;padding:18px 20px 20px;border:1.5px solid #d7b59b;border-left:6px solid #b8673f;border-radius:6px;background:#fdf7f0}
+.model-title{margin:0 0 14px;font-family:var(--sans);font-size:13px;letter-spacing:1.6px;text-transform:uppercase;color:#8a4b31}
+.model-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.model-math{grid-column:1/-1}
+.model-step mjx-container{max-width:100%;overflow-x:auto;overflow-y:hidden;vertical-align:middle}
+.model-step{min-width:0;background:var(--white);border:1px solid #ead8c6;border-radius:5px;padding:12px 14px}
+.model-step h4{display:flex;align-items:center;gap:8px;margin:0 0 8px;font-size:14px;color:var(--ink)}
+.model-step h4 span{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:#b8673f;color:#fff;font-size:12px;flex:none}
+.model-step ul{margin:0;padding-left:18px;font-size:14px;line-height:1.55}
+.model-step li+li{margin-top:6px}
+.model-math{background:#f3f8f4;border-color:#c9dccd}
+.model-math h4 span{background:var(--teal)}
+.model-step .source-links{font-size:11.5px;color:var(--muted);margin:10px 0 0}
+.model-figure{margin:16px auto 0;max-width:620px}
+.model-figure img{display:block;width:auto;max-width:100%;height:auto;max-height:430px;margin:0 auto;background:var(--white);border-radius:5px}
+.model-figure figcaption{font-size:12px;text-align:center;color:var(--muted);margin-top:6px}
+@media(max-width:900px){.model-grid{grid-template-columns:minmax(0,1fr)}.problem-photo img{height:220px}.model-panel{padding:14px}}
+/* Visual math editor (MathLive) in answer boxes. */
+math-field.answer-math{flex:1;display:block;min-width:160px;max-width:500px;min-height:48px;padding:6px 10px;font-size:20px;background:white;border:1px solid #a7b7ad;border-radius:4px;color:var(--ink);--caret-color:var(--teal);--selection-background-color:#d4e8dc;--contains-highlight-background-color:transparent}
+math-field.answer-math:focus-within{outline:3px solid #bc552f;outline-offset:2px}
+math-field.answer-math::part(menu-toggle){display:none}
+@media(max-width:760px){math-field.answer-math{min-width:100%;max-width:none}}
+.correct math-field.answer-math{border-color:#508865}
+.needs-work math-field.answer-math{border-color:#bf825e}
+.input-mode-toggle{background:none;border:0;padding:0;margin:0 0 8px;font-size:12px;color:var(--teal);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.input-mode-toggle:hover{color:var(--accent)}
+/* Units: a segment attached to the right edge of the answer box (desktop and phones). */
+.answer-input-wrap{flex-wrap:nowrap;gap:0;max-width:560px;align-items:stretch}
+.answer-input-wrap>input,.answer-input-wrap>math-field.answer-math{flex:1 1 auto;min-width:0;max-width:none}
+.answer-input-wrap:has(.answer-unit)>input,.answer-input-wrap:has(.answer-unit)>math-field.answer-math{border-top-right-radius:0;border-bottom-right-radius:0}
+.answer-unit{display:flex;align-items:center;margin:0;padding:0 16px;font-size:17px;color:var(--ink);background:#eef3ee;border:1px solid #a7b7ad;border-left:0;border-radius:0 4px 4px 0;white-space:nowrap}
+.correct .answer-unit{border-color:#508865}
+.needs-work .answer-unit{border-color:#bf825e}
+@media(max-width:760px){.answer-input-wrap>input,.answer-input-wrap>math-field.answer-math{min-width:0;max-width:none}.answer-unit{margin-top:0;padding:0 12px;font-size:16px}}
+/* Collapsible weeks sidebar. */
+.sidebar-toggle,.sidebar-reopen{display:inline-flex;align-items:center;gap:7px;background:none;border:1px solid var(--line);border-radius:4px;padding:6px 11px;font-size:12px;font-weight:600;color:var(--teal);cursor:pointer}
+.sidebar-toggle:hover,.sidebar-reopen:hover{border-color:var(--teal);color:var(--accent)}
+.sidebar-toggle{margin:0 0 14px}
+.sidebar-reopen{display:none;margin:0 0 18px}
+html.weeks-collapsed .week-sidebar{display:none}
+html.weeks-collapsed .sidebar-reopen{display:inline-flex}
+html.weeks-collapsed .learning-layout{grid-template-columns:minmax(0,1fr);max-width:1040px}
+@media(max-width:760px){.sidebar-toggle{margin:0 0 8px}html.weeks-collapsed .learning-layout{max-width:none}}
+@media print{.sidebar-toggle,.sidebar-reopen{display:none!important}}

@@ -1,4 +1,4 @@
-name: Deploy Coastal Calculus to GitHub Pages
+name: Deploy Around the World in 80 Integrals to GitHub Pages
 
 on:
   push:

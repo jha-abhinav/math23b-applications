@@ -11,7 +11,7 @@ args=parser.parse_args()
 root=Path(__file__).resolve().parent/'dist'
 server=ThreadingHTTPServer(('127.0.0.1',args.port),partial(SimpleHTTPRequestHandler,directory=str(root)))
 url=f'http://127.0.0.1:{server.server_port}/'
-print(f'Coastal Calculus: {url}\nPress Ctrl+C to stop.',flush=True)
+print(f'Around the World in 80 Integrals: {url}\nPress Ctrl+C to stop.',flush=True)
 if args.open:webbrowser.open(url)
 try:server.serve_forever()
 except KeyboardInterrupt:pass

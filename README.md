@@ -1,4 +1,6 @@
-# Coastal Calculus — Application Worksheets website
+# Around the World in 80 Integrals — Math 23B application worksheets website
+
+Designed by [Abhinav Jha](https://abhinav_jha.codeberg.page/). Available under the [MIT License](LICENSE); bundled MathJax, MathLive, and the credited photographs keep their own licenses (listed in `LICENSE`).
 
 A self-contained Math 23B practice website for Weeks 2–10: 45 problems, 135 final-answer checks, progressive hints, complete solutions, and discussion prompts. All pages, the bundled MathJax 3 math renderer and its fonts, diagrams, CSV data, and PDF downloads are local files; there are no external fonts, scripts, API calls, accounts, or analytics.
 
@@ -23,6 +25,7 @@ To host it elsewhere, upload the contents of `dist/` to a static web host. No de
 ## Student tools
 
 - Check an answer beside each part; fractions and expressions such as `pi/4`, `sqrt(2)`, `exp(1)-1`, and equivalent formulas are accepted.
+- Decimal answers are checked to two decimal places; answers smaller than 0.1 need two significant digits so that, for example, 0 is not accepted for 0.002. A question can set its own `decimals`. Common LaTeX (`\frac`, `\sqrt`, `\pi`, `\phi`, `\theta`, `\cdot`, `\left(`…`\right)`) and symbols such as π, φ, √, · are accepted.
 - Vectors and bounds use comma-separated expressions. Angles use radians; `^` means exponentiation. Leave units out of the input because units are supplied next to it.
 - Scalar potentials may differ by any additive constant. The vector-potential task checks the curl numerically and the requested zero first component, so alternative valid constructions are accepted.
 - “Need a hint?” reveals one of two written hints at a time. These are authored hints, not AI chat.

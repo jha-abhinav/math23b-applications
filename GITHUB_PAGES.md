@@ -1,4 +1,4 @@
-# Publish Coastal Calculus on GitHub Pages
+# Publish Around the World in 80 Integrals on GitHub Pages
 
 The website is ready for GitHub Pages. No server, paid API, npm installation, LaTeX build, or database is required on GitHub. The repository contains already-generated webpages, local math assets, CSV data, and all 18 PDF downloads.
 
@@ -7,7 +7,7 @@ The website is ready for GitHub Pages. No server, paid API, npm installation, La
 1. Create a new repository on GitHub, for example `math23b-applications`. For GitHub Free, use a public repository.
 2. Put the **contents of `Application Worksheets Website/` at the repository root**. Keep `.github/workflows/deploy-pages.yml`, `dist/`, `tests/`, and the documentation together. Do not place the whole website folder inside another folder in this repository.
 3. In the repository, select **Settings → Pages → Build and deployment → Source → GitHub Actions**.
-4. Push to the `main` branch. If the push happened before enabling Pages, run **Actions → Deploy Coastal Calculus to GitHub Pages → Run workflow**.
+4. Push to the `main` branch. If the push happened before enabling Pages, run **Actions → Deploy Around the World in 80 Integrals to GitHub Pages → Run workflow**.
 5. The deployment job publishes its resulting URL. A project repository normally appears at `https://YOUR-USERNAME.github.io/math23b-applications/`.
 
 The workflow validates the site and answer checker, uploads only `dist/`, and deploys it. All local assets and links are relative, so the site works at either a project-repository subpath or an account Pages root. No base-URL edits are needed.
