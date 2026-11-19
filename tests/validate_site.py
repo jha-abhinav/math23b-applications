@@ -55,6 +55,13 @@ for week in data['weeks']:
  for suffix in ('','_solutions'):
   pdf=DIST/'downloads'/f'application_worksheet_week_{n:02d}{suffix}.pdf'
   assert pdf.read_bytes().startswith(b'%PDF-'),pdf
+# Whiteboard kits: one PNG per problem (linked from its card) and one PDF per week.
+for w in data['weeks']:
+ n=w['week'];html_=(DIST/f'week-{n:02d}.html').read_text()
+ assert (DIST/'downloads'/f'whiteboard_kits_week_{n:02d}.pdf').read_bytes().startswith(b'%PDF-') and f'downloads/whiteboard_kits_week_{n:02d}.pdf' in html_,('kit PDF',n)
+ for p in w['problems']:
+  png=DIST/'assets/kits'/(p['id']+'.png')
+  assert png.read_bytes()[:8]==b'\x89PNG\r\n\x1a\n' and f'assets/kits/{p["id"]}.png' in html_,('kit',p['id'])
 for key in data['sources']:assert (DIST/'downloads/data'/f'{key}.csv').is_file()
 # Photos must carry attribution; model panels need all three parts; figures must exist.
 for w in data['weeks']:
@@ -75,4 +82,4 @@ assert not re.search(r'https?:|//[a-z]',config),'MathJax must stay self-hosted'
 ML=DIST/'assets/vendor/mathlive'
 assert (ML/'mathlive.min.js').is_file() and (ML/'LICENSE.txt').is_file() and len(list((ML/'fonts').glob('*.woff2')))>=19,'MathLive bundle'
 assert (DIST/'assets/mathfield.js').is_file()
-print(f'PASS: 11 pages, 45 problems, 135 forms, 45 discussions, 18 PDF downloads, {len(data['sources'])} CSV datasets, {links} local links/assets, and GitHub project-subpath compatibility.')
+print(f'PASS: 11 pages, 45 problems, 135 forms, 45 discussions, 18 PDF downloads, 45 whiteboard kits + 9 kit PDFs, {len(data['sources'])} CSV datasets, {links} local links/assets, and GitHub project-subpath compatibility.')
