@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-18T12:08:42.731317</dc:date>
+    <dc:date>2026-11-18T16:48:51.270577</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -36,12 +36,12 @@ L 267.3984 263.974594
 L 267.3984 23.291074 
 L 7.2 23.291074 
 z
-" clip-path="url(#p638f8915c8)" style="fill: #dcebe0; stroke: #dcebe0; stroke-linejoin: miter"/>
+" clip-path="url(#pac4f7d3898)" style="fill: #dcebe0; stroke: #dcebe0; stroke-linejoin: miter"/>
    </g>
    <g id="line2d_1">
     <path d="M 137.2992 263.974594 
 L 137.2992 23.291074 
-" clip-path="url(#p638f8915c8)" style="fill: none; stroke: #60726a; stroke-width: 2.2; stroke-linecap: square"/>
+" clip-path="url(#pac4f7d3898)" style="fill: none; stroke: #60726a; stroke-width: 2.2; stroke-linecap: square"/>
    </g>
    <g id="patch_3">
     <path d="M 202.3488 153.390274 
@@ -345,7 +345,7 @@ L 202.291358 156.123373
 L 202.334438 154.757125 
 L 202.3488 153.390274 
 z
-" clip-path="url(#p638f8915c8)" style="fill: #cfe8ee; stroke: #173d38; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#pac4f7d3898)" style="fill: #cfe8ee; stroke: #173d38; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="text_1">
     <!-- mooring rope -->
@@ -625,7 +625,7 @@ L 202.119134 154.755617
 L 202.334438 153.731987 
 L 202.3488 153.390274 
 L 202.3488 153.390274 
-" clip-path="url(#p638f8915c8)" style="fill: none; stroke-dasharray: 0.6,0.99; stroke-dashoffset: 0; stroke: #173d38; stroke-width: 0.6"/>
+" clip-path="url(#pac4f7d3898)" style="fill: none; stroke-dasharray: 0.6,0.99; stroke-dashoffset: 0; stroke: #173d38; stroke-width: 0.6"/>
    </g>
    <g id="text_2">
     <!-- $z$ (along the rope) -->
@@ -1176,7 +1176,7 @@ L 139.2992 36.800605
    <g id="line2d_3">
     <path d="M 137.2992 153.390274 
 L 194.385595 184.576713 
-" clip-path="url(#p638f8915c8)" style="fill: none; stroke: #173d38; stroke-linecap: square"/>
+" clip-path="url(#pac4f7d3898)" style="fill: none; stroke: #173d38; stroke-linecap: square"/>
    </g>
    <g id="text_6">
     <!-- $R$ -->
@@ -1217,7 +1217,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p638f8915c8">
+  <clipPath id="pac4f7d3898">
    <rect x="7.2" y="20.038594" width="260.1984" height="243.936"/>
   </clipPath>
  </defs>

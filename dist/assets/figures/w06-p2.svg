@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-18T12:08:40.215306</dc:date>
+    <dc:date>2026-11-18T16:53:14.154952</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -432,18 +432,18 @@ L 227.503837 166.582016
 L 227.979608 165.3895 
 L 228.401049 164.182594 
 z
-" clip-path="url(#pdf3f3cbcc9)" style="fill: #cdbb9c; stroke: #60726a; stroke-width: 0.8; stroke-linejoin: miter"/>
+" clip-path="url(#pc7f988e084)" style="fill: #cdbb9c; stroke: #60726a; stroke-width: 0.8; stroke-linejoin: miter"/>
    </g>
    <g id="line2d_1">
     <defs>
-     <path id="m3ade121beb" d="M -3 0 
+     <path id="m1912e069e3" d="M -3 0 
 L 3 0 
 M 0 3 
 L 0 -3 
 " style="stroke: #173d38"/>
     </defs>
-    <g clip-path="url(#pdf3f3cbcc9)">
-     <use xlink:href="#m3ade121beb" x="151.344" y="168.987394" style="fill: #173d38; stroke: #173d38"/>
+    <g clip-path="url(#pc7f988e084)">
+     <use xlink:href="#m1912e069e3" x="151.344" y="168.987394" style="fill: #173d38; stroke: #173d38"/>
     </g>
    </g>
    <g id="line2d_2">
@@ -582,12 +582,12 @@ L 252.926817 173.809207
 L 253.268093 169.001277 
 L 253.381936 164.182594 
 L 253.381936 164.182594 
-" clip-path="url(#pdf3f3cbcc9)" style="fill: none; stroke: #1d7165; stroke-width: 1.8; stroke-linecap: square"/>
+" clip-path="url(#pc7f988e084)" style="fill: none; stroke: #1d7165; stroke-width: 1.8; stroke-linecap: square"/>
    </g>
    <g id="line2d_3">
     <path d="M 151.344 164.182594 
 L 63.90884 111.581898 
-" clip-path="url(#pdf3f3cbcc9)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #173d38; stroke-width: 0.8"/>
+" clip-path="url(#pc7f988e084)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #173d38; stroke-width: 0.8"/>
    </g>
    <g id="text_1">
     <!-- Antarctica -->
@@ -1572,7 +1572,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="pdf3f3cbcc9">
+  <clipPath id="pc7f988e084">
    <rect x="7.2" y="20.038594" width="288.288" height="288.288"/>
   </clipPath>
  </defs>
