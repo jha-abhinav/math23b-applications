@@ -447,7 +447,7 @@ Every published number in Around the World in 80 Integrals comes from one of the
 
 [https://en.wikipedia.org/wiki/Great_Zimbabwe](https://en.wikipedia.org/wiki/Great_Zimbabwe) · `zimbabwe.csv` · used in w07-p4
 
-*Published approximate dimensions (secondary source).* Wikipedia’s Great Zimbabwe article, citing P. Garlake, Great Zimbabwe (1973), p. 29, gives the dimensions below. Other descriptions differ by about a metre. The top radius used in the problem is assumed.
+*Published approximate dimensions (secondary source).* Wikipedia’s Great Zimbabwe article, citing P. Garlake, Great Zimbabwe (1973), p. 29, gives the dimensions below. Other descriptions differ by about a meter. The top radius used in the problem is assumed.
 
 | Quantity | Reported value |
 | --- | --- |

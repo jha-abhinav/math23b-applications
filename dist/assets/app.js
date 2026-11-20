@@ -41,10 +41,14 @@ function updateProgress(){
  }
 }
 function renderHints(id){
- const q=questions.get(id),count=Math.min(q.hints.length,Number(state.hints[id])||0),panel=document.getElementById('hints-'+id),button=document.querySelector('[data-hint="'+id+'"]');
- if(!panel)return;panel.hidden=count===0;button.setAttribute('aria-expanded',String(count>0));const list=panel.querySelector('ol');list.replaceChildren();
- for(let i=0;i<count;i++){const li=document.createElement('li');li.textContent=q.hints[i];list.append(li);}
- button.textContent=count===0?'Need a hint?':count<q.hints.length?'Another hint':'All hints shown';button.disabled=count>=q.hints.length;
+ // Written hints first, then (if the part has one) a picture hint already in the page.
+ const q=questions.get(id),figure=document.querySelector('[data-hint-figure="'+id+'"]'),total=q.hints.length+(figure?1:0);
+ const count=Math.min(total,Number(state.hints[id])||0),panel=document.getElementById('hints-'+id),button=document.querySelector('[data-hint="'+id+'"]');
+ if(!panel)return;panel.hidden=count===0;button.setAttribute('aria-expanded',String(count>0));const list=panel.querySelector('ol');if(window.MathJax&&MathJax.typesetClear)MathJax.typesetClear([list]);list.replaceChildren();
+ for(let i=0;i<Math.min(count,q.hints.length);i++){const li=document.createElement('li');li.textContent=q.hints[i];list.append(li);}
+ if(count&&window.typesetCoastalMath)window.typesetCoastalMath(list);  // hints may contain $...$ math
+ if(figure)figure.hidden=count<=q.hints.length;
+ button.textContent=count===0?'Need a hint?':count>=total?'All hints shown':(figure&&count===q.hints.length)?'Show a picture':'Another hint';button.disabled=count>=total;
 }
 for(const form of document.querySelectorAll('[data-answer-form]')){
  const id=form.dataset.answerForm,q=questions.get(id),saved=state.answers[id];

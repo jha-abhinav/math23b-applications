@@ -5,7 +5,9 @@ from urllib.parse import urlparse,urljoin,unquote
 import json,re
 ROOT=Path(__file__).resolve().parents[1];DIST=ROOT/'dist'
 assert not list(DIST.glob('browser-qa*.html')),'Remove temporary QA pages with tests/prepare_browser_qa.py --clean'
-raw=(DIST/'assets/workbook.js').read_text();data=json.loads(re.sub(r';\s*$','',re.sub(r'^window\.WORKBOOK=','',raw)))
+data=json.loads((ROOT/'workbook.json').read_text())  # full content; the site ships a slim copy
+raw=(DIST/'assets/workbook.js').read_text();slim=json.loads(re.sub(r';\s*$','',re.sub(r'^window\.WORKBOOK=','',raw)))
+assert slim=={'weeks':[{'week':w['week'],'problems':[{'id':p['id'],'questions':[{k:v for k,v in q.items() if k!='prompt'} for q in p['questions']]} for p in w['problems']]} for w in data['weeks']]},'assets/workbook.js is out of date with workbook.json'
 assert [w['week'] for w in data['weeks']]==list(range(2,11))
 used_sources={k for w in data['weeks'] for p in w['problems'] for k in p['sources']}
 assert set(data['sources'])==used_sources,('unused or missing sources',set(data['sources'])^used_sources)
@@ -30,7 +32,8 @@ for path in DIST.glob('*.html'):
  parser=Page();parser.feed(path.read_text());pages[path.name]=parser
  assert len(parser.ids)==len(set(parser.ids)),(path,'duplicate IDs')
  assert all('alt' in image and image['alt'] for image in parser.images),(path,'missing alt')
-assert len(pages)==11,(len(pages),'expected home, sources, and nine weeks')
+assert len(pages)==12,(len(pages),'expected home, sources, acknowledgements, and nine weeks')
+assert 'acknowledgements.html' in pages
 links=0
 for filename,page in pages.items():
  for link in page.links:
@@ -82,4 +85,4 @@ assert not re.search(r'https?:|//[a-z]',config),'MathJax must stay self-hosted'
 ML=DIST/'assets/vendor/mathlive'
 assert (ML/'mathlive.min.js').is_file() and (ML/'LICENSE.txt').is_file() and len(list((ML/'fonts').glob('*.woff2')))>=19,'MathLive bundle'
 assert (DIST/'assets/mathfield.js').is_file()
-print(f'PASS: 11 pages, 45 problems, 135 forms, 45 discussions, 18 PDF downloads, 45 whiteboard kits + 9 kit PDFs, {len(data['sources'])} CSV datasets, {links} local links/assets, and GitHub project-subpath compatibility.')
+print(f'PASS: 12 pages, 45 problems, 135 forms, 45 discussions, 18 PDF downloads, 45 whiteboard kits + 9 kit PDFs, {len(data['sources'])} CSV datasets, {links} local links/assets, and GitHub project-subpath compatibility.')
