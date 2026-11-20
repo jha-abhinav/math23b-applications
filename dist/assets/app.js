@@ -26,13 +26,32 @@ window.addEventListener('storage',event=>{
  try{const latest=JSON.parse(event.newValue);if(latest&&latest.answers&&latest.hints&&latest.notes){state=latest;baseline=JSON.parse(JSON.stringify(state));updateProgress();}}catch(e){}
 });
 function currentInput(id){const f=document.querySelector('[data-answer-form="'+id+'"]');if(!f)return '';const q=questions.get(id);return q.kind==='choice'?f.querySelector('input:checked')?.value??'':f.querySelector('input[type=text]').value;}
-function feedback(id,result){
+const attempts={};  // wrong tries per part in this visit, so a repeated wrong answer visibly registers
+function fmt(x){return Number.isFinite(x)?String(Number(x.toPrecision(6))):String(x);}
+function feedback(id,result,restoring){  // restoring: re-showing a saved check on page load (no attempt count, no animation)
  const section=document.querySelector('[data-question="'+id+'"]');if(!section)return;
- const line=section.querySelector('.feedback'),input=section.querySelector('input[type=text]');
+ const line=section.querySelector('.feedback'),input=section.querySelector('input[type=text]'),q=questions.get(id);
  section.classList.toggle('correct',!!result?.correct);section.classList.toggle('needs-work',!!result&&!result.correct&&!result.invalid);
- if(!result){line.textContent='';if(input)input.removeAttribute('aria-invalid');return;}
- line.textContent=result.correct?'✓ Correct. Check that your written setup and units support this result.':result.invalid?result.message:'Not quite. Check your bounds, orientation, and any area or speed factors. A hint is available.';
- line.className='feedback '+(result.correct?'success':result.invalid?'format-error':'retry');if(input)input.setAttribute('aria-invalid',String(!result.correct));
+ line.replaceChildren();line.className='feedback';
+ if(!result){if(input)input.removeAttribute('aria-invalid');return;}
+ const head=document.createElement('strong'),body=document.createElement('span');line.append(head,' ',body);
+ if(result.correct){head.textContent='✓ Correct.';body.textContent='Check that your written setup and units support this result.';line.classList.add('success');}
+ else if(result.invalid){head.textContent='⚠ Not checked yet:';body.textContent=result.message;line.classList.add('format-error');}
+ else{
+  if(!restoring)attempts[id]=(attempts[id]||0)+1;
+  head.textContent='✗ Incorrect'+(attempts[id]>1?' (try '+attempts[id]+').':'.');
+  const notes=[];
+  if(q.kind==='choice')notes.push('That option is not the right one.');
+  if(typeof result.value==='number'&&Number.isFinite(result.value))notes.push('Your answer works out to '+fmt(result.value)+(q.units?' '+q.units:'')+'.');
+  if(result.close)notes.push('That is close: check your rounding (two decimal places) or a small arithmetic slip.');
+  else if(result.wrongParts&&result.wrongParts.length)notes.push((result.wrongParts.length===1?'Component ':'Components ')+result.wrongParts.join(' and ')+(result.wrongParts.length===1?' is':' are')+' not right.');
+  else if(q.kind!=='choice')notes.push('Check your bounds, orientation, and any area or speed factors.');
+  const hintButton=section.querySelector('[data-hint]');
+  notes.push(hintButton&&!hintButton.disabled?'Try “Need a hint?” for a step in the right direction.':'Compare your work with the full solution below.');
+  body.textContent=notes.join(' ');line.classList.add('retry');
+  if(!restoring){void line.offsetWidth;line.classList.add('pulse');}  // restart the nudge animation on every wrong try
+ }
+ if(input)input.setAttribute('aria-invalid',String(!result.correct));
 }
 function updateProgress(){
  for(const [n,w] of weeks){const qs=w.problems.flatMap(p=>p.questions);let count=0;for(const q of qs){const saved=state.answers[q.id];if(saved&&saved.checked&&window.AnswerChecker.check(q,saved.value).correct)count++;}
@@ -52,7 +71,7 @@ function renderHints(id){
 }
 for(const form of document.querySelectorAll('[data-answer-form]')){
  const id=form.dataset.answerForm,q=questions.get(id),saved=state.answers[id];
- if(saved){if(q.kind==='choice'){const radio=form.querySelector('input[value="'+String(saved.value).replace(/[^0-9]/g,'')+'"]');if(radio)radio.checked=true;}else form.querySelector('input').value=String(saved.value??'');if(saved.checked)feedback(id,AnswerChecker.check(q,saved.value));}
+ if(saved){if(q.kind==='choice'){const radio=form.querySelector('input[value="'+String(saved.value).replace(/[^0-9]/g,'')+'"]');if(radio)radio.checked=true;}else form.querySelector('input').value=String(saved.value??'');if(saved.checked)feedback(id,AnswerChecker.check(q,saved.value),true);}
  form.addEventListener('submit',event=>{event.preventDefault();const value=currentInput(id),result=AnswerChecker.check(q,value);state.answers[id]={value,checked:!result.invalid};feedback(id,result);save();updateProgress();});
  form.addEventListener('input',()=>{state.answers[id]={value:currentInput(id),checked:false};feedback(id,null);save();updateProgress();});
 }

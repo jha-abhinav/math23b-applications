@@ -19,7 +19,7 @@ window.addEventListener('load',()=>{
   assert(document.documentElement.scrollWidth<=innerWidth,'No horizontal overflow at '+innerWidth+' px');
   if(n===2){
    const id='w02-p1-a',form=document.querySelector('[data-answer-form="'+id+'"]'),input=form.querySelector('input');
-   input.value='0';input.dispatchEvent(new Event('input',{bubbles:true}));form.requestSubmit();assert(document.getElementById('feedback-'+id).textContent.includes('Not quite'),'Wrong-answer feedback');
+   input.value='0';input.dispatchEvent(new Event('input',{bubbles:true}));form.requestSubmit();assert(document.getElementById('feedback-'+id).textContent.includes('Incorrect'),'Wrong-answer feedback');
    input.value='sqrt(';input.dispatchEvent(new Event('input',{bubbles:true}));form.requestSubmit();assert(document.getElementById('feedback-'+id).textContent&&!document.querySelector('[data-question="'+id+'"]').classList.contains('correct'),'Malformed-answer feedback');
    const hint=document.querySelector('[data-hint="'+id+'"]');hint.click();hint.click();assert(document.querySelectorAll('#hints-'+id+' li').length===2&&hint.disabled,'Two progressive hints');
    const solution=document.querySelector('[data-solution="w02-p1"]');solution.querySelector('summary').click();assert(solution.open,'Solution opens');

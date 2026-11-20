@@ -117,10 +117,12 @@ function check(question,input){
     return {correct:valid,invalid:false};
    }
    const places=e=>question.decimals??defaultPlaces(e);
-   return {correct:parts.every((x,i)=>isConstant(question.expected[i])?decimalClose(evaluate(x),evaluate(question.expected[i]),places(evaluate(question.expected[i]))):sameExpression(x,question.expected[i],'expression',question.tolerance)),invalid:false};
+   const ok=parts.map((x,i)=>isConstant(question.expected[i])?decimalClose(evaluate(x),evaluate(question.expected[i]),places(evaluate(question.expected[i]))):sameExpression(x,question.expected[i],'expression',question.tolerance));
+   return {correct:ok.every(Boolean),invalid:false,wrongParts:ok.map((v,i)=>v?0:i+1).filter(Boolean)};
   }
   if(question.kind==='expression'||question.kind==='potential')return {correct:sameExpression(input,question.expected,question.kind,question.tolerance),invalid:false};
-  return {correct:decimalClose(evaluate(input),evaluate(question.expected),question.decimals??defaultPlaces(evaluate(question.expected))),invalid:false};
+  const value=evaluate(input),exact=evaluate(question.expected),correct=decimalClose(value,exact,question.decimals??defaultPlaces(exact));
+  return {correct,invalid:false,value,close:!correct&&Math.abs(value-exact)<=0.02*Math.max(Math.abs(exact),1e-12)};
  }catch(error){return {correct:false,invalid:true,message:error.message};}
 }
 const api={evaluate,check,splitVector,normalize,decimalClose,defaultPlaces};root.AnswerChecker=api;if(typeof module!=='undefined'&&module.exports)module.exports=api;
