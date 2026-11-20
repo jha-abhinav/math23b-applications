@@ -1774,6 +1774,22 @@
       "caption": "The model: rain depth $d(x,y)$ (mm) over four IMD cells of about 730 km$^2$ each, with $x$ and $y$ in cell widths. Crosses mark the upper-right sample points and dots the midpoints. Notice that the depth grows mostly with $x$, toward the mountains.",
       "file": "w02-p1"
      },
+     "videos": [
+      {
+       "id": "CR7KL6KSlx4",
+       "title": "Monsoons: Wet, Dry, Repeat...",
+       "channel": "NASA Goddard",
+       "kind": "setting",
+       "why": "NASA explains how monsoon winds bring seasonal rain, the process behind the heavy rain on the Western Ghats in this story."
+      },
+      {
+       "id": "JXh9AQkKmsw",
+       "title": "Defining Double Integration with Riemann Sums | Volume under a Surface",
+       "channel": "Dr. Trefor Bazett",
+       "kind": "math",
+       "why": "Shows how a double integral is defined as a limit of Riemann sums over grid cells, the same cell-by-cell sum used for the rain volume."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 6,
@@ -1907,6 +1923,22 @@
       "caption": "Left: the Niño 3.4 box in the tropical Pacific. Right: the box $B$ in scaled coordinates, showing where the snapshot $T_1$ is cold ($x<-0.3$) and warm ($x>-0.3$).",
       "file": "w02-p2"
      },
+     "videos": [
+      {
+       "id": "_Tuou_QcgxI",
+       "title": "Understanding El Nino",
+       "channel": "NOAAClimate",
+       "kind": "setting",
+       "why": "A short NOAA explainer on El Niño, the warming of the tropical Pacific that the Niño 3.4 index tracks."
+      },
+      {
+       "id": "85zGYB-34jQ",
+       "title": "Double integral 1 | Double and triple integrals | Multivariable Calculus | Khan Academy",
+       "channel": "Khan Academy",
+       "kind": "math",
+       "why": "Introduces the double integral as a volume under a surface, the idea behind averaging a temperature anomaly over the Niño 3.4 box."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 2,
@@ -2037,6 +2069,22 @@
       "caption": "The models, to scale in meters. Side view: the smooth pyramid between the inscribed and circumscribed four-level staircases. Top view: the base split along its diagonals into 8 triangles, with the triangle $0\\le y\\le x$ shaded.",
       "file": "w02-p3"
      },
+     "videos": [
+      {
+       "id": "Zdsi0qKVJO8",
+       "title": "Teotihuacan’s pyramids and sacred landscape",
+       "channel": "Smarthistory",
+       "kind": "setting",
+       "why": "Art historians discuss the Pyramid of the Sun and its setting, so you can see the stepped pyramid you are modeling."
+      },
+      {
+       "id": "OJzXr_TcVR4",
+       "title": "Volume between two surfaces | Calculus in a Nutshell | LetThereBeMath |",
+       "channel": "Let there be math",
+       "kind": "math",
+       "why": "Computes volume as a double integral of top minus bottom, the formula used for the smooth and stepped pyramid models."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 6,
@@ -2168,6 +2216,22 @@
       "caption": "The model in scaled coordinates. Left: the lake $D$ upstream of the dam at $x=0$. Right: the V-shaped water cross-section at the dam, between the bed $z=|y|$ and the surface $z=1$, shaded by sediment concentration, which is highest near the deepest point.",
       "file": "w02-p4"
      },
+     "videos": [
+      {
+       "id": "yrG0owPfNRM",
+       "title": "Ethiopia launches Africa’s biggest dam | BBC News",
+       "channel": "BBC News",
+       "kind": "setting",
+       "why": "BBC News report on the Grand Ethiopian Renaissance Dam on the Blue Nile, the dam and reservoir in this story."
+      },
+      {
+       "id": "LUvynduoUX0",
+       "title": "Change the order of integration to solve tricky integrals",
+       "channel": "Dr. Trefor Bazett",
+       "kind": "math",
+       "why": "Shows how to sketch a region and switch between dx dy and dy dx, as you do for the lake outline and dam cross-section."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 5,
@@ -2286,6 +2350,22 @@
       "caption": "The model hole: the 220 DU contour, a circle of area 26.0 million km² centered on the South Pole, on a grid of 1000 km cells with the pole at a grid corner.",
       "file": "w02-p5"
      },
+     "videos": [
+      {
+       "id": "4syiC55sDBo",
+       "title": "2023 Ozone Hole Update",
+       "channel": "NASA Goddard",
+       "kind": "setting",
+       "why": "NASA Goddard update on the 2023 Antarctic ozone hole, the satellite-measured area you approximate on a grid."
+      },
+      {
+       "id": "7zCUPp5QnzU",
+       "title": "Riemann sums to approximate volume of a double integral (KristaKingMath)",
+       "channel": "Krista King",
+       "kind": "math",
+       "why": "Worked example of approximating a double integral with sums over rectangular cells, the same idea as bounding area by cells."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 3,
@@ -2442,6 +2522,22 @@
       "caption": "The model cross-section, to scale (1 unit = 110 m). The horizontal slice runs from the windward face to the slip face. The two vertical slices have different tops, one on each side of the crest.",
       "file": "w03-p1"
      },
+     "videos": [
+      {
+       "id": "eI2hdixCW50",
+       "title": "Dune du Pilat in France, the Tallest Sand Dune in Europe",
+       "channel": "VideoVoyage.TV",
+       "kind": "setting",
+       "why": "Footage of the real Dune du Pilat: look at the long gentle seaward slope and compare it with the steep side, as in the cross-section."
+      },
+      {
+       "id": "K27g2mqjIao",
+       "title": "Double Integrals:  Changing the Order of Integration",
+       "channel": "Mathispower4u",
+       "kind": "math",
+       "why": "Shows how to sketch a region and rewrite a double integral in the other order, as in the dx dy versus dy dx comparison."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 4,
@@ -2577,6 +2673,22 @@
       "caption": "Left: the tank model, warmer than $T_0$ above $z=20$ ft and cooler below. Right: one high tide in scaled units; a mussel at height $y$ is underwater while the curve $\\sin\\theta$ is above the dashed line.",
       "file": "w03-p2"
      },
+     "videos": [
+      {
+       "id": "6B65WGk5ws8",
+       "title": "Feeding Time in the Open Sea Exhibit!",
+       "channel": "Monterey Bay Aquarium",
+       "kind": "setting",
+       "why": "The Open Sea exhibit itself, from the aquarium that runs it: see the very large tank that the box model stands in for."
+      },
+      {
+       "id": "MyalIbUpabY",
+       "title": "Changing order of integration",
+       "channel": "Dr Peyam",
+       "kind": "math",
+       "why": "Presents reversing the order of integration as a way to turn a hard integral into an easy one, the idea behind the tide-height integral."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 3,
@@ -2706,6 +2818,22 @@
       "caption": "The model ice tongue in scaled coordinates, between the valley floor $z=y^2$ and the ice surface $z=1-x$. The shaded cross-sections are slices at fixed $x$; they shrink toward the end of the tongue.",
       "file": "w03-p3"
      },
+     "videos": [
+      {
+       "id": "g3Ur0GQYcC4",
+       "title": "Tents on the Khumbu glacier - Everest Base Camp",
+       "channel": "WildFilmsIndia",
+       "kind": "setting",
+       "why": "A short clip of the surface of the Khumbu glacier at Everest Base Camp, showing the rough rocky ice the model smooths into a solid."
+      },
+      {
+       "id": "ATH4eezicFk",
+       "title": "Triple Integrals in Rectangular Coordinates",
+       "channel": "Houston Math Prep",
+       "kind": "math",
+       "why": "Explains setting up the bounds of a triple integral in rectangular coordinates, the skill needed for the ice tongue."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 2,
@@ -2835,6 +2963,22 @@
       "caption": "The wind model. Left: the chance that the wind speed exceeds $v$, with the mean of 11 m/s marked. Right: the power curve of one turbine, which levels off at 0.850 MW above the rated speed of 14 m/s.",
       "file": "w03-p4"
      },
+     "videos": [
+      {
+       "id": "hHV67ty85W4",
+       "title": "Desert Winds of Power: Lake Turkana Wind Power Project",
+       "channel": "CGTN Africa",
+       "kind": "setting",
+       "why": "A report on the Lake Turkana wind farm in Kenya, the site whose turbines the problem models."
+      },
+      {
+       "id": "2i435Ypvfjg",
+       "title": "Finding bounds for a triple integral",
+       "channel": "Bob Davis",
+       "kind": "math",
+       "why": "Works on finding the bounds of a triple integral for a solid, as the reordering in this problem requires."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 3,
@@ -2952,6 +3096,22 @@
       "caption": "The smooth start over the first 10 s: jerk, acceleration, speed, and position, each scaled to its maximum. Speed and position grow slowly at first. The jerk is back to zero at 10 s, but the acceleration is then at its peak.",
       "file": "w03-p5"
      },
+     "videos": [
+      {
+       "id": "lMEloNvALiA",
+       "title": "World’s largest ‘ship lift’ in the Three Gorges Dam",
+       "channel": "South China Morning Post",
+       "kind": "setting",
+       "why": "Shows the Three Gorges ship lift that raises ships in a water-filled basin, the machine in the problem."
+      },
+      {
+       "id": "t5qXJjdTUDw",
+       "title": "How to Switch the Order of Integration in Double Integrals",
+       "channel": "Glass of Numbers",
+       "kind": "math",
+       "why": "A worked example of switching the order of integration, the technique used to handle the triangle region of the lift."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 4,
@@ -3112,6 +3272,22 @@
       "caption": "The polar map $T$ sends the rectangle $D^*$ in the $(r,\\theta)$-plane (left) onto the circular field (right). The shaded rectangle $[1100,L]\\times[0,\\pi/12]$ is the ground the outer span waters in one hour; matching colors show where each of its edges goes.",
       "file": "w04-p1"
      },
+     "videos": [
+      {
+       "id": "nKoIuSSukNQ",
+       "title": "Center Pivot Irrigation on the Kansas-Nebraska border",
+       "channel": "Our Earth",
+       "kind": "setting",
+       "why": "Center pivot irrigation on the Great Plains: watch the long pipe sweep around its center and think about why outer nozzles must water far more ground than inner ones."
+      },
+      {
+       "id": "Io1MtN50GyY",
+       "title": "Change of variables (double integral and the Jacobian) | Lecture 31 | Vector Calculus for Engineers",
+       "channel": "Jeffrey Chasnov",
+       "kind": "math",
+       "why": "Lecture on changing variables in a double integral with the Jacobian, the tool that produces the factor $r$ in polar coordinates."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 2,
@@ -3246,6 +3422,22 @@
       "caption": "The graphene model: carbon atoms (dots) $0.142$ nm apart, the lattice vectors $\\mathbf a_1$ and $\\mathbf a_2$, and one unit cell $T([0,1]^2)$ (shaded), which contains two atoms.",
       "file": "w04-p2"
      },
+     "videos": [
+      {
+       "id": "tTsKdsKwNNU",
+       "title": "Answer: Why research graphene?",
+       "channel": "Nobel Prize",
+       "kind": "setting",
+       "why": "Short clip from the 2010 Nobel Prize in Physics laureates on why graphene, the one-atom-thick carbon sheet in this problem, is worth studying."
+      },
+      {
+       "id": "Ip3X9LOh2dk",
+       "title": "The determinant | Chapter 6, Essence of linear algebra",
+       "channel": "3Blue1Brown",
+       "kind": "math",
+       "why": "Shows the determinant as the factor by which a linear map scales area, which is how the lattice vectors give the area of the unit cell."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 2,
@@ -3375,6 +3567,22 @@
       "caption": "Left: the line $u=\\sqrt q$ in the $uv$-plane. Right: its image under $T$, the comet’s parabola with the Sun at its focus, together with the 1 AU circle (dashed) and the region $D$ swept from perihelion until the comet is 1 AU from the Sun.",
       "file": "w04-p3"
      },
+     "videos": [
+      {
+       "id": "e3zPV1fb4Iw",
+       "title": "Time-Lapse Video Shows Comet NEOWISE From the International Space Station",
+       "channel": "SciTech Daily",
+       "kind": "setting",
+       "why": "Time-lapse of comet NEOWISE, the comet whose orbit the problem models, seen from the International Space Station."
+      },
+      {
+       "id": "z4kJyGtgNGg",
+       "title": "Jacobians & Change of Variable Explained - Calc 3",
+       "channel": "Simple Explanations by Dheirya Tyagi",
+       "kind": "math",
+       "why": "Explains Jacobians and how they let you change variables in a multiple integral, the technique used to move between the uv-plane and the xy-plane."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 1,
@@ -3491,6 +3699,22 @@
       "caption": "The vertical lines $u=0.9,\\ 0.6,\\ 0.3,\\ 0.1$ in the square (left) become circles about the origin (right), and the dashed lines $v=0.125$ and $v=0.25$ become rays. The 400 sample points $T(u,v)$ crowd near the origin and thin out farther away.",
       "file": "w04-p4"
      },
+     "videos": [
+      {
+       "id": "SvneCLZ3dLk",
+       "title": "The Box-Muller Transform (Proof and Python implementation)",
+       "channel": "StatMonteCarlo",
+       "kind": "math",
+       "why": "Derives the Box-Muller transformation, which turns uniform random numbers into normal ones, and implements it in Python."
+      },
+      {
+       "id": "HFMrsXNuTSY",
+       "title": "From Uniform to Normal Distribution - Jacobian, Box-Muller Transformation, Cholesky Decomposition",
+       "channel": "Allen Kei",
+       "kind": "math",
+       "why": "Connects the Jacobian to the Box-Muller transformation, the same change of variables used to get normal samples from uniform ones."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 3,
@@ -3616,6 +3840,22 @@
       "caption": "Mercator’s map with parallels every $15^\\circ$: equal steps in latitude take up more and more map height toward the poles. Shaded: the latitude bands of Greenland and of DR Congo; dashed: latitude $72^\\circ$ N.",
       "file": "w04-p5"
      },
+     "videos": [
+      {
+       "id": "kIID5FDi2JQ",
+       "title": "Why all world maps are wrong",
+       "channel": "Vox",
+       "kind": "setting",
+       "why": "Explains why flattening the globe forces distortions, with the Mercator projection that inflates Greenland, the area question in this problem."
+      },
+      {
+       "id": "Cgs5CjK7sLI",
+       "title": "14.8: Change of Variables - Jacobians",
+       "channel": "Shannon “MATHCHICK” Myers",
+       "kind": "math",
+       "why": "Calculus lecture on Jacobians as the local area scale factor of a map, the quantity compared across the two projections."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 2,
@@ -3778,6 +4018,22 @@
       "caption": "The model arch $A$, in feet: the band between the outer parabola $y=630(1-x^2/315^2)$ and the inner parabola $y=613(1-x^2/261^2)$. Right: a leg’s cross-section at the ground, an equilateral triangle with 54 ft sides. Notice how much empty space the band encloses.",
       "file": "w05-p1"
      },
+     "videos": [
+      {
+       "id": "kuv0GIloLRE",
+       "title": "Gateway Arch Tram Ride to the Top",
+       "channel": "The Gateway Arch",
+       "kind": "setting",
+       "why": "Short official clip of the tram ride inside the arch, whose hollow legs are the tapering triangular sections in the problem."
+      },
+      {
+       "id": "aIqJDhD785E",
+       "title": "Double integrals to find mass and center of mass of the lamina (KristaKingMath)",
+       "channel": "Krista King",
+       "kind": "math",
+       "why": "Worked examples of mass and center of mass of a flat region from moments, the same method used to balance the arch band."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 1,
@@ -3901,6 +4157,22 @@
       "caption": "Earth cut along its spin axis $z$, as a ball whose density depends only on $\\rho$; darker shading means denser. A small spherical box has edges $\\Delta\\rho$, $\\rho\\,\\Delta\\phi$, and $\\rho\\sin\\phi\\,\\Delta\\theta$, with the third edge pointing out of the page.",
       "file": "w05-p2"
      },
+     "videos": [
+      {
+       "id": "UD7GHzIRI-s",
+       "title": "Layers of the Earth—What are they? How were they found?",
+       "channel": "IRIS Earthquake Science",
+       "kind": "setting",
+       "why": "Shows how earthquake waves revealed that Earth has a dense core, the reason the center must be much denser than the surface."
+      },
+      {
+       "id": "QmCQUBSsKwQ",
+       "title": "29.5 Deep Dive - Moment of Inertia of a Sphere",
+       "channel": "MIT OpenCourseWare",
+       "kind": "math",
+       "why": "Computes the moment of inertia of a sphere by integration, the quantity the problem matches to Earth’s measured value."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 4,
@@ -4027,6 +4299,22 @@
       "caption": "Side view of the Finnish scan group C (tilts 2°–45°, range 100 km). The shaded cone above the steepest, 45° beam is never sampled by these scans; in the model it is $z\\ge\\sqrt{x^2+y^2}$.",
       "file": "w05-p3"
      },
+     "videos": [
+      {
+       "id": "8vtHEOkgV5M",
+       "title": "What Is a Doppler Radar's Cone of Silence?",
+       "channel": "Storm Chaser Coaching",
+       "kind": "setting",
+       "why": "Explains the blind region above a weather radar that tops out at a maximum tilt, the cone whose volume you compute."
+      },
+      {
+       "id": "QY691zwG6AY",
+       "title": "4c. Volume of a cone as a triple integral in cylindrical coordinates",
+       "channel": "Dr V's Mathematics Videos",
+       "kind": "math",
+       "why": "Sets up the volume of a cone as a triple integral in cylindrical coordinates, the technique for the blind cone."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 3,
@@ -4154,6 +4442,22 @@
       "caption": "Walker’s 1977 measurements of sky glow toward Salinas (filled dots: visual; open circles: blue) on log–log axes, with a line $\\propto D^{-2.5}$. On these axes a power law is a straight line, here with slope $-2.5$.",
       "file": "w05-p4"
      },
+     "videos": [
+      {
+       "id": "V_A78zDBwYE",
+       "title": "Light Pollution 101 | National Geographic",
+       "channel": "National Geographic",
+       "kind": "setting",
+       "why": "Introduces how city lights brighten the night sky and hide the stars, the sky glow that Lick Observatory fights."
+      },
+      {
+       "id": "0JOIhPfXnxc",
+       "title": "Evaluating Improper Integrals",
+       "channel": "Professor Dave Explains",
+       "kind": "math",
+       "why": "Shows how to evaluate integrals over unbounded ranges with limits, as needed for a power-law glow that fades with distance."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 3,
@@ -4279,6 +4583,22 @@
       "caption": "The damper modeled as a solid steel ball of radius $R$ hanging between the 87th and 92nd floors (schematic), with its center at the origin and the $z$-axis pointing up. The lower half, $z\\le0$, used in part (c), is shaded.",
       "file": "w05-p5"
      },
+     "videos": [
+      {
+       "id": "Tkz6b7Q3dRk",
+       "title": "Taipei 101 damper sways dramatically during 6.8 earthquake",
+       "channel": "Taiwan News",
+       "kind": "setting",
+       "why": "Footage of the huge ball swinging during an earthquake; watch how it moves against the tower’s sway."
+      },
+      {
+       "id": "jBcNOkwiS6k",
+       "title": "Integration in Spherical Coordinates",
+       "channel": "Dr. Trefor Bazett",
+       "kind": "math",
+       "why": "Explains the volume element in spherical coordinates, used for the ball’s volume and moment of inertia."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 4,
@@ -4434,6 +4754,22 @@
       "caption": "The model: the main cable as the parabola $y=144\\,(x/640)^2$ between the towers at $x=-640$ and $x=640$, with its lowest point at the origin and sag $h=144$ m. The vertical scale is doubled.",
       "file": "w06-p1"
      },
+     "videos": [
+      {
+       "id": "EPd2w5d_qAk",
+       "title": "Building the impossible: Golden Gate Bridge - Alex Gendler",
+       "channel": "TED-Ed",
+       "kind": "setting",
+       "why": "A short animated history of how the Golden Gate Bridge and its suspension cables were designed and built, the real structure behind the parabolic cable model."
+      },
+      {
+       "id": "DXHM7LYGcbI",
+       "title": "Parametric curve arc length | Applications of definite integrals | AP Calculus BC | Khan Academy",
+       "channel": "Khan Academy",
+       "kind": "math",
+       "why": "Derives the arc length integral of a parametrized curve, the formula used to find the length of the cable."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 4,
@@ -4563,6 +4899,22 @@
       "caption": "Seen from directly above the South Pole: the voyage circle $C$ of radius $\\rho=3185.5$ km, the eastward current (teal), and the northward drift (orange, exaggerated).",
       "file": "w06-p2"
      },
+     "videos": [
+      {
+       "id": "8VMSF28J9H4",
+       "title": "Circulation of the Southern Ocean",
+       "channel": "NCI Australia",
+       "kind": "setting",
+       "why": "Shows how the Southern Ocean circulates around Antarctica, the eastward Antarctic Circumpolar Current that the problem models."
+      },
+      {
+       "id": "t3cJYNdQLYg",
+       "title": "Line integrals and vector fields | Multivariable Calculus | Khan Academy",
+       "channel": "Khan Academy",
+       "kind": "math",
+       "why": "Explains line integrals of vector fields, which measure how much a field pushes along a path, as in the circulation of the current around the voyage circle."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 2,
@@ -4691,6 +5043,22 @@
       "caption": "The two processes from A $=(1,1)$ to B $=(2.5,1/3)$, with volume $x$ and pressure $y$. Path 2 follows the isotherm $xy=1$ to $(3,1/3)$, then the constant pressure $y=1/3$ back to B. Arrowheads show the direction of travel.",
       "file": "w06-p3"
      },
+     "videos": [
+      {
+       "id": "daV-tMnZeIw",
+       "title": "What happens to your body at the top of Mount Everest - Andrew Lovering",
+       "channel": "TED-Ed",
+       "kind": "setting",
+       "why": "Explains what low air pressure and thin air at the summit of Mount Everest do to the human body."
+      },
+      {
+       "id": "AFF8FXxt5os",
+       "title": "Using a line integral to find the work done by a vector field example | Khan Academy",
+       "channel": "Khan Academy",
+       "kind": "math",
+       "why": "Works an example of computing the work done by a vector field along a path with a line integral, the technique for comparing the two processes."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 2,
@@ -4831,6 +5199,22 @@
       "caption": "Left: the hairpin road model seen from above, from Prato ($t=0$) to the pass ($t=1$). Right: the distances $r_A=R+915$ m and $r_B=R+2757$ m of the two ends of the road from Earth’s center (not to scale).",
       "file": "w06-p4"
      },
+     "videos": [
+      {
+       "id": "7d4MRBQltLY",
+       "title": "The Legendary Stelvio Pass | Descending the 48 Hairpins to Val Venosta [4K]",
+       "channel": "CAPSY",
+       "kind": "setting",
+       "why": "Drives down the 48 hairpin bends of the Stelvio Pass, the road in the problem."
+      },
+      {
+       "id": "v5eGEbJY-nc",
+       "title": "The Fundamental Theorem of Line Integrals",
+       "channel": "Dr. Trefor Bazett",
+       "kind": "math",
+       "why": "Presents the Fundamental Theorem of Line Integrals: for a gradient field the work depends only on the endpoints, so the hairpins do not change the total."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 3,
@@ -4947,6 +5331,22 @@
       "caption": "Top view, with the current flowing up out of the page: field lines of $\\mathbf B$ around the channel, the circle of radius 10 m (dashed), and the squares $S_1$ and $S_2$.",
       "file": "w06-p5"
      },
+     "videos": [
+      {
+       "id": "VqXnN_FQfrc",
+       "title": "What Causes Lightning?",
+       "channel": "NOAA SciJinks",
+       "kind": "setting",
+       "why": "A NOAA video on what causes lightning, the current-carrying channel whose magnetic field the problem models."
+      },
+      {
+       "id": "5fqwJyt4Lus",
+       "title": "Ampère's Law: Crash Course Physics #33",
+       "channel": "CrashCourse",
+       "kind": "math",
+       "why": "Introduces Ampere's law, which relates the circulation of the magnetic field around a loop to the enclosed current."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 2,
@@ -5100,6 +5500,22 @@
       "caption": "The model, side view through the poles: Earth as a sphere of radius $R$, the tropics as a band of height $h=2R\\sin23.44^\\circ$, and the enclosing cylinder. The arrows show horizontal projection from the sphere out to the cylinder.",
       "file": "w07-p1"
      },
+     "videos": [
+      {
+       "id": "V-Df6cbnScg",
+       "title": "NASA Spotlite Seasons on Earth",
+       "channel": "NASA eClips - ARCHIVE",
+       "kind": "setting",
+       "why": "A short NASA Spotlite piece on Earth’s seasons and axial tilt, the tilt whose angle sets the edge of the tropics."
+      },
+      {
+       "id": "GNcFjFmqEc8",
+       "title": "But why is a sphere's surface area four times its shadow?",
+       "channel": "3Blue1Brown",
+       "kind": "math",
+       "why": "Explains why a sphere’s area is $4\\pi R^2$ through the sphere-and-cylinder idea of Archimedes, the band-area fact this problem uses (long video; the cylinder argument is the relevant part)."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 5,
@@ -5226,6 +5642,22 @@
       "caption": "The model, cross-section through the dish axis, to scale in meters: the paraboloid $z=r^2/19.2$ with a 12 m aperture and 1.875 m rim depth. Rays parallel to the axis reflect through the focus $(0,0,4.8)$.",
       "file": "w07-p2"
      },
+     "videos": [
+      {
+       "id": "_u8zGhIW-dc",
+       "title": "Making the Ultimate Radio Telescope -The ALMA Antenna (Main Reflector)- Part 1",
+       "channel": "ALMAJapanChannel",
+       "kind": "setting",
+       "why": "Manufacturing film for the Japanese-built 12 m antenna reflector panels (machining and etching), showing how the curved mirror surface is made."
+      },
+      {
+       "id": "hnjfY9hRIXk",
+       "title": "The Surface Area formula for Parametric Surfaces  // Vector Calculus",
+       "channel": "Dr. Trefor Bazett",
+       "kind": "math",
+       "why": "Derives the surface area formula from a tangent parallelogram and the cross product of the partial derivatives, the method used for the dish."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 2,
@@ -5361,6 +5793,22 @@
       "caption": "The model surface drawn only with straight lines: teal lines come from $\\Phi$ and brown lines from the second family. Height 200 m, base radius 76 m, narrowest radius 38 m at $z=0$. The marker $P$ is orange.",
       "file": "w07-p3"
      },
+     "videos": [
+      {
+       "id": "tmbZVmXyOXM",
+       "title": "Why Are Cooling Towers Shaped Like That?",
+       "channel": "Practical Engineering",
+       "kind": "setting",
+       "why": "An engineering explainer on why cooling towers use curved shapes; the problem asks how straight lines can build that curve (long video)."
+      },
+      {
+       "id": "E44FDt2JbD0",
+       "title": "Ruled quadrics",
+       "channel": "David Metzler",
+       "kind": "math",
+       "why": "A brief demonstration of how hyperboloids of one sheet are made from straight lines, the ruling used in the problem."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 4,
@@ -5498,6 +5946,22 @@
       "caption": "The model, side view to scale in meters: the tower is the truncated cone $1.25\\le u\\le2.75$, and the dashed lines extend it to the imaginary apex $u=0$, 7.5 m above the top.",
       "file": "w07-p4"
      },
+     "videos": [
+      {
+       "id": "G-6uKth3JQ0",
+       "title": "Great Zimbabwe, Zimbabwe | Africa’s Cultural Landmarks",
+       "channel": "The Met",
+       "kind": "setting",
+       "why": "A Met film on the dry stone masonry of Great Zimbabwe and the team that maintains it."
+      },
+      {
+       "id": "dzrEqu8DuKc",
+       "title": "Ex: Surface Area of a Parametric Surface (Surface Integral)",
+       "channel": "Mathispower4u",
+       "kind": "math",
+       "why": "A worked example of finding the area of a parametric surface, the technique used for the cone-shaped tower."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 3,
@@ -5613,6 +6077,22 @@
       "caption": "The model: a circular tube of radius $r$ whose center runs around a circle of radius $R$. Left: top view, with the tube’s center circle dashed. Right: a cut through the central axis, with the angle $\\phi$ measured around the tube.",
       "file": "w07-p5"
      },
+     "videos": [
+      {
+       "id": "vmf7ohVqSlA",
+       "title": "What is ITER going to look like?",
+       "channel": "iterorganization",
+       "kind": "setting",
+       "why": "Short ITER animation of the site and a working tokamak, the ring-shaped device whose plasma the problem models."
+      },
+      {
+       "id": "cejWIWElS8M",
+       "title": "Example: Surface Area of a Torus",
+       "channel": "Justin Ryan",
+       "kind": "math",
+       "why": "Computes the surface area of a torus as a parametrized surface, the same calculation as the plasma ring."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 3,
@@ -5777,6 +6257,22 @@
       "caption": "The model. Left: the same radial rays cross every sphere of radius $a$ around the Sun, so each sphere catches the same total power. Right: near Earth the rays are parallel, $\\mathbf F=(0,0,-S)$, and they light only the day hemisphere $z\\ge0$.",
       "file": "w08-p1"
      },
+     "videos": [
+      {
+       "id": "l3QQQu7QLoM",
+       "title": "A Decade of Sun",
+       "channel": "NASA Goddard",
+       "kind": "setting",
+       "why": "NASA’s time lapse of ten years of the Sun seen by the Solar Dynamics Observatory: the glowing sphere whose output spreads outward through every surrounding sphere."
+      },
+      {
+       "id": "ivg3dLTarbs",
+       "title": "Conceptual understanding of flux in three dimensions | Multivariable Calculus | Khan Academy",
+       "channel": "Khan Academy",
+       "kind": "math",
+       "why": "Introduces flux as the rate at which something passes through a surface, the idea behind counting the power that crosses a sphere."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 3,
@@ -5917,6 +6413,22 @@
       "caption": "Cross-section of one trough, to scale in meters: the mirror $z=x^2/6.8$, the $5.76$ m aperture, and the focus $1.70$ m above the vertex. Vertical sunbeams reflect to the focus. The orange arrows are upward unit normals $\\mathbf n$; at the rim, $\\mathbf n$ tilts away from the vertical by the angle $\\alpha$.",
       "file": "w08-p2"
      },
+     "videos": [
+      {
+       "id": "E3wKZePsEug",
+       "title": "4C Maroc - Noor Ouarzazate project in Morocco",
+       "channel": "4C Maroc",
+       "kind": "setting",
+       "why": "A look at the Noor Ouarzazate solar project in Morocco, where the curved trough mirrors of the problem are installed."
+      },
+      {
+       "id": "9k97m8oWnaY",
+       "title": "Introduction to the surface integral | Multivariable Calculus | Khan Academy",
+       "channel": "Khan Academy",
+       "kind": "math",
+       "why": "A long introduction to surface integrals of a function over a curved surface, the technique for integrating over a trough-shaped surface."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 2,
@@ -6055,6 +6567,22 @@
       "caption": "The model in your frame: you move in the $+x$ direction, and the rain arrives with velocity $(-v,0,-u)$. The top disk and the front half of the side, where $\\cos\\theta>0$ (teal), get wet; the back half is sheltered.",
       "file": "w08-p3"
      },
+     "videos": [
+      {
+       "id": "p_EDxNt6EE8",
+       "title": "Walk or Run in the Rain Which Gets You Wetter",
+       "channel": "Cosmographica",
+       "kind": "setting",
+       "why": "Looks at the very question of the problem, whether walking or running gets you less wet in the rain."
+      },
+      {
+       "id": "pvDb8fhDGpU",
+       "title": "Surface Integral of Vector Fields - Intro to Flux Integral",
+       "channel": "Math Simplified",
+       "kind": "math",
+       "why": "An introduction to the flux integral of a vector field and the formulas used to evaluate it, as used to count rain hitting each side of your body."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 6,
@@ -6183,6 +6711,22 @@
       "caption": "Cross-section of the region $W$: the dome, the base $z=0$, and the Hubble-flow arrows $\\mathbf v=H\\mathbf r$, which grow with distance from the Milky Way at the center. On the base the arrows lie along it, not across it.",
       "file": "w08-p4"
      },
+     "videos": [
+      {
+       "id": "TRJXrmFVBRw",
+       "title": "What Is the Hubble Tension? | Saul Perlmutter",
+       "channel": "Closer To Truth",
+       "kind": "setting",
+       "why": "Saul Perlmutter describes the Hubble constant and why early-universe and late-universe measurements of it disagree."
+      },
+      {
+       "id": "rB83DpBJQsE",
+       "title": "Divergence and curl:  The language of Maxwell's equations, fluid flow, and more",
+       "channel": "3Blue1Brown",
+       "kind": "math",
+       "why": "A visual explanation of divergence as how much a flow spreads out from a point, which is how fast a region gains volume."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 3,
@@ -6304,6 +6848,22 @@
       "caption": "Schematic, not to scale: the curtains at $15^\\circ$W and $35^\\circ$W with the published yearly dust totals ($182$ and $132$ million tonnes), and the closed box between them. The deposition through the box’s bottom is the unknown.",
       "file": "w08-p5"
      },
+     "videos": [
+      {
+       "id": "ygulQJoIe2Y",
+       "title": "NASA | Satellite Tracks Saharan Dust to Amazon in 3-D",
+       "channel": "NASA Goddard",
+       "kind": "setting",
+       "why": "NASA Goddard video of CALIPSO observations of Saharan dust crossing the Atlantic to the Amazon, the study behind the problem."
+      },
+      {
+       "id": "ivg3dLTarbs",
+       "title": "Conceptual understanding of flux in three dimensions | Multivariable Calculus | Khan Academy",
+       "channel": "Khan Academy",
+       "kind": "math",
+       "why": "Flux as the rate at which mass passes through a surface, the idea behind dust crossing an imaginary curtain."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 3,
@@ -6464,6 +7024,22 @@
       "caption": "The chart model (1 cm $=100$ km): the triangle $T$ and the idealized planimeter. The foot of the arm (length $L$) slides along the rail $y=0$, and the wheel at the tracer rolls by the tracer’s motion perpendicular to the arm. The calibration ellipse is drawn at half size.",
       "file": "w09-p1"
      },
+     "videos": [
+      {
+       "id": "jMvEOmpy8Kw",
+       "title": "A tool to measure the area of any shape",
+       "channel": "Chris Staecker",
+       "kind": "setting",
+       "why": "A polar planimeter in use: the tracer is run once around a region and the instrument reports its area, the same instrument the problem models."
+      },
+      {
+       "id": "gGXnILbrhsM",
+       "title": "Green's theorem example 1 | Multivariable Calculus | Khan Academy",
+       "channel": "Khan Academy",
+       "kind": "math",
+       "why": "Uses Green's theorem to evaluate a line integral of a vector field around a closed curve, the move that turns a hard boundary integral into an area integral."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 5,
@@ -6590,6 +7166,22 @@
       "caption": "Plan view of the model seating $D$ ($15\\le r\\le52$ m, $0\\le\\theta\\le\\pi$), with the front of the stage along $y=0$ and the orchestra inside the inner arc.",
       "file": "w09-p2"
      },
+     "videos": [
+      {
+       "id": "-agIRZQlQzQ",
+       "title": "Visite virtuelle du Théâtre antique d'Orange",
+       "channel": "Théâtre antique d'Orange",
+       "kind": "setting",
+       "why": "A short virtual visit from the theatre's own channel, showing the curved stone seating around the orchestra that the problem models as a half-ring."
+      },
+      {
+       "id": "AJCqS7RUVE8",
+       "title": "Week 6 | Lesson 21 | Area calculations using Green's Theorem",
+       "channel": "Dylan ArceJaeger",
+       "kind": "math",
+       "why": "Shows how to compute the area of a region from a line integral around its boundary using Green's theorem, the idea behind finding the seating area."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 3,
@@ -6718,6 +7310,22 @@
       "caption": "The ideal-vortex model outside the eye (arrows) and the three loops: (a) the circle $r=150$, (b) the ellipse, traversed clockwise, and (c) the circle of radius $100$ about $(420,0)$, which does not enclose the eye. Map in km.",
       "file": "w09-p3"
      },
+     "videos": [
+      {
+       "id": "bZdkRj0FqZE",
+       "title": "Footage of Super typhoon Haiyan from the International Space Station",
+       "channel": "NASA Video",
+       "kind": "setting",
+       "why": "NASA footage of Typhoon Haiyan from the space station: watch the air spiral around the eye, the circulation the problem models."
+      },
+      {
+       "id": "zd0fgLSRuvs",
+       "title": "Video 16.4.4: Green's Theorem Extended to a Region with a Hole",
+       "channel": "Calculus 3D",
+       "kind": "math",
+       "why": "Extends Green's theorem to a region with a hole, the tool for loops around a point where the field is singular, like the eye."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 2,
@@ -6850,6 +7458,22 @@
       "caption": "One float as a sphere $S$ of radius $R=21.6$ cm on the mooring rope (the $z$-axis), fully submerged, with outward normals $\\mathbf n$.",
       "file": "w09-p4"
      },
+     "videos": [
+      {
+       "id": "i45deA5k7lw",
+       "title": "Preparing the deep water mooring for deployment",
+       "channel": "Schmidt Ocean Institute",
+       "kind": "setting",
+       "why": "A time-lapse of a crew preparing a deep-water oceanographic mooring, the kind of instrument line that buoyant floats hold upright."
+      },
+      {
+       "id": "asyIsn59Lnc",
+       "title": "Divergence theorem example 1 | Divergence theorem | Multivariable Calculus | Khan Academy",
+       "channel": "Khan Academy",
+       "kind": "math",
+       "why": "A worked example of computing flux across a closed surface with the divergence theorem, a method for the flux part of this review."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 4,
@@ -6968,6 +7592,22 @@
       "caption": "Model swirl speed $v(r)$ across the ring. It peaks at about $1$ m/s and falls to zero at the ring edge, $r=90\\sqrt2\\approx127$ km.",
       "file": "w09-p5"
      },
+     "videos": [
+      {
+       "id": "R5-s6O8qyvE",
+       "title": "An Ocean in Motion: NASA's Mesmerizing View of Earth's Underwater Highways",
+       "channel": "NASA Goddard",
+       "kind": "setting",
+       "why": "A NASA visualization of global ocean currents from the ECCO model; look for the swirling flows that, off southern Africa, shed rings."
+      },
+      {
+       "id": "JB99RbQAilI",
+       "title": "Curl, Circulation, and Green's Theorem  //  Vector Calculus",
+       "channel": "Dr. Trefor Bazett",
+       "kind": "math",
+       "why": "Explains circulation along a closed curve and how Green's theorem equals it to the curl integrated over the enclosed region, the link between loop spin and local spin."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 1,
@@ -7140,6 +7780,22 @@
       "caption": "The model, in a cut through Earth’s axis (not to scale): Earth rotating rigidly about the $z$-axis, Monterey’s parallel $C$ at latitude $L$, and the polar cap $S$ (teal) that $C$ bounds. At Monterey, compare the local vertical with the direction of Earth’s axis and $\\boldsymbol\\Omega$.",
       "file": "w10-p1"
      },
+     "videos": [
+      {
+       "id": "sWDi-Xk3rgw",
+       "title": "Foucault's Pendulum - Sixty Symbols",
+       "channel": "Sixty Symbols",
+       "kind": "setting",
+       "why": "A University of Nottingham physicist explains how a Foucault pendulum shows Earth rotating, and why it would not work at the equator; this is the same rotation whose latitude dependence you meet at Monterey."
+      },
+      {
+       "id": "aDNyyTtaJdY",
+       "title": "The CURL of a 3D vector field  //  Vector Calculus",
+       "channel": "Dr. Trefor Bazett",
+       "kind": "math",
+       "why": "Curl as the local spinning of a three-dimensional field, with the del-operator formula you use to get the curl of the rotation field."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 3,
@@ -7273,6 +7929,22 @@
       "caption": "The model: a uniform vertical field $\\mathbf B(t)$ over the pad’s coil, the flat loop at $z=0$, and the tilted loop $C$ on the cylinder $x^2+y^2=0.02^2$. Dotted lines show that $C$ lies directly above the flat loop.",
       "file": "w10-p2"
      },
+     "videos": [
+      {
+       "id": "iOVg62_DUYU",
+       "title": "The Truth About Wireless Charging",
+       "channel": "Real Engineering",
+       "kind": "setting",
+       "why": "An engineering explainer on how wireless phone charging works, to put the charging pad and its coil from the problem in context."
+      },
+      {
+       "id": "0UvNF_cfBJ4",
+       "title": "Stokes' Theorem // Geometric Intuition & Statement  //  Vector Calculus",
+       "channel": "Dr. Trefor Bazett",
+       "kind": "math",
+       "why": "Why the circulation around a loop equals the flux of the curl through any surface it bounds, which is what lets you replace the tilted loop by a flat disk."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 4,
@@ -7424,6 +8096,23 @@
       "caption": "Cross-section of a quadrupole around the beam pipe (millimeters; beam along $+z$, out of the page): the four magnet poles (gray), with the $36.9\\times46.5$ mm beam screen and the search coil (orange) along the positive $x$-axis in the plane $y=0$.",
       "file": "w10-p3"
      },
+     "videos": [
+      {
+       "id": "p8HeEZLrKVA",
+       "title": "Quadrupole Magnets Explained | Focusing, Field Lines & Off-Centre Beams",
+       "channel": "Beam Physics Explained",
+       "kind": "setting",
+       "why": "An animated lesson on the four-pole quadrupole magnets that focus particle beams, with the field lines around the beam pipe, as in the LHC arc magnets of the problem."
+      },
+      {
+       "id": "rB83DpBJQsE",
+       "title": "Divergence and curl:  The language of Maxwell's equations, fluid flow, and more",
+       "channel": "3Blue1Brown",
+       "kind": "math",
+       "start": 135,
+       "why": "Starting at the divergence segment (2:15), a visual account of divergence as net outflow and curl as rotation, the two tests you apply to magnetic fields."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 2,
@@ -7565,6 +8254,22 @@
       "caption": "Left: the model spiral $\\mathbf c(t)$ around a field line (radius exaggerated). Right: the electrojet as a line current at height $h=100$ km, seen end-on, with circular field lines (not to scale).",
       "file": "w10-p4"
      },
+     "videos": [
+      {
+       "id": "HJfy8acFaOg",
+       "title": "Space Weather and Earth's Aurora",
+       "channel": "NASA Video",
+       "kind": "setting",
+       "why": "NASA explains how solar plasma travels down Earth’s magnetic field lines to the poles and lights up the aurora, the setting of the electrons in the problem."
+      },
+      {
+       "id": "jlza4rEFXKM",
+       "title": "Finding the scalar potential function for a conservative vector field // Vector Calculus",
+       "channel": "Dr. Trefor Bazett",
+       "kind": "math",
+       "why": "Test that a field is conservative, then find its potential by alternating integration and differentiation, the method used for the potential here."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 3,
@@ -7686,6 +8391,22 @@
       "caption": "Left: heat leaving Earth through its surface. Right: the crustal column, with heat leaving its top at 73 mW/m² and the unknown mantle flux $q_m$ entering its bottom.",
       "file": "w10-p5"
      },
+     "videos": [
+      {
+       "id": "0Pg3U04gk8A",
+       "title": "The Path of Heat: Understanding Heat Flow and the Geothermal Gradient",
+       "channel": "UVA Geothermal",
+       "kind": "setting",
+       "why": "A short geoscience lesson on how heat moves from Earth’s interior to the surface and what controls heat flow, the setting of the Earth heat-budget problem."
+      },
+      {
+       "id": "pY4t-ikhzhU",
+       "title": "The Divergence Theorem // Geometric Intuition & Statement // Vector Calculus",
+       "channel": "Dr. Trefor Bazett",
+       "kind": "math",
+       "why": "The divergence theorem: outward flux through a closed surface equals the integral of the divergence over the enclosed volume, the tool for relating surface heat flow to heat produced inside."
+      }
+     ],
      "solutionFigures": [
       {
        "step": 3,

@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-20T14:45:21.813574</dc:date>
+    <dc:date>2026-11-20T14:51:29.728266</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -432,12 +432,12 @@ L 224.297557 119.868259
 L 224.308935 120.348615 
 L 224.312727 120.829091 
 z
-" clip-path="url(#pdd0e6a56df)" style="fill: #cdbb9c; stroke: #173d38; stroke-linejoin: miter"/>
+" clip-path="url(#pe48702ae50)" style="fill: #cdbb9c; stroke: #173d38; stroke-linejoin: miter"/>
    </g>
    <g id="line2d_1">
     <path d="M 72.130909 120.829091 
 L 315.621818 120.829091 
-" clip-path="url(#pdd0e6a56df)" style="fill: none; stroke: #173d38; stroke-width: 1.4; stroke-linecap: square"/>
+" clip-path="url(#pe48702ae50)" style="fill: none; stroke: #173d38; stroke-width: 1.4; stroke-linecap: square"/>
    </g>
    <g id="line2d_2">
     <path d="M 261.850909 120.829091 
@@ -492,12 +492,12 @@ L 126.316451 113.33262
 L 125.978039 117.610973 
 L 125.901818 120.829091 
 L 125.901818 120.829091 
-" clip-path="url(#pdd0e6a56df)" style="fill: none; stroke-dasharray: 1.2,1.98; stroke-dashoffset: 0; stroke: #60726a; stroke-width: 1.2"/>
+" clip-path="url(#pe48702ae50)" style="fill: none; stroke-dasharray: 1.2,1.98; stroke-dashoffset: 0; stroke: #60726a; stroke-width: 1.2"/>
    </g>
    <g id="line2d_3">
     <path d="M 80.247273 73.1561 
 L 307.505455 73.1561 
-" clip-path="url(#pdd0e6a56df)" style="fill: none; stroke-dasharray: 6.66,2.88; stroke-dashoffset: 0; stroke: #c55d40; stroke-width: 1.8"/>
+" clip-path="url(#pe48702ae50)" style="fill: none; stroke-dasharray: 6.66,2.88; stroke-dashoffset: 0; stroke: #c55d40; stroke-width: 1.8"/>
    </g>
    <g id="text_1">
     <!-- $\bar y\approx23.5$ m -->
@@ -1235,7 +1235,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="pdd0e6a56df">
+  <clipPath id="pe48702ae50">
    <rect x="7.2" y="7.2" width="357.12" height="129.861818"/>
   </clipPath>
  </defs>

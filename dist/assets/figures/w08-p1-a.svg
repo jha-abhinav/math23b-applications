@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-20T14:47:14.738441</dc:date>
+    <dc:date>2026-11-20T14:51:27.685340</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -133,7 +133,7 @@ L 134.131775 116.401279
 L 134.343565 113.526891 
 L 134.383944 111.605685 
 L 134.383944 111.605685 
-" clip-path="url(#pa251d553ac)" style="fill: none; stroke: #1d7165; stroke-width: 1.8; stroke-linecap: square"/>
+" clip-path="url(#pbe1a17e0da)" style="fill: none; stroke: #1d7165; stroke-width: 1.8; stroke-linecap: square"/>
    </g>
    <g id="patch_2">
     <path d="M 102.375749 111.605685 
@@ -264,12 +264,12 @@ L 117.991132 76.528187
 L 117.508393 76.130082 
 L 117.020251 75.73862 
 L 116.526799 75.353875 
-" clip-path="url(#pa251d553ac)" style="fill: none; stroke: #c55d40; stroke-width: 6"/>
+" clip-path="url(#pbe1a17e0da)" style="fill: none; stroke: #c55d40; stroke-width: 6"/>
    </g>
    <g id="line2d_3">
     <path d="M 88.657951 111.605685 
 L 44.490034 123.440443 
-" clip-path="url(#pa251d553ac)" style="fill: none; stroke-dasharray: 3.33,1.44; stroke-dashoffset: 0; stroke: #173d38; stroke-width: 0.9"/>
+" clip-path="url(#pbe1a17e0da)" style="fill: none; stroke-dasharray: 3.33,1.44; stroke-dashoffset: 0; stroke: #173d38; stroke-width: 0.9"/>
    </g>
    <g id="patch_14">
     <path d="M 88.657951 123.951703 
@@ -282,7 +282,7 @@ C 77.612788 105.190943 76.311933 108.331483 76.311933 111.605685
 C 76.311933 114.879887 77.612788 118.020427 79.927998 120.335638 
 C 82.243209 122.650849 85.383749 123.951703 88.657951 123.951703 
 z
-" clip-path="url(#pa251d553ac)" style="fill: #e8b33a; stroke: #e8b33a; stroke-linejoin: miter"/>
+" clip-path="url(#pbe1a17e0da)" style="fill: #e8b33a; stroke: #e8b33a; stroke-linejoin: miter"/>
    </g>
    <g id="patch_15">
     <path d="M 120.991111 79.272526 
@@ -789,7 +789,7 @@ L 304.134545 149.258182
 L 314.28 111.212727 
 L 248.334545 103.603636 
 z
-" clip-path="url(#pf3d44966fb)" style="fill: #f3d6cb; stroke: #c55d40; stroke-width: 1.5; stroke-linejoin: miter"/>
+" clip-path="url(#pc19db93ed7)" style="fill: #f3d6cb; stroke: #c55d40; stroke-width: 1.5; stroke-linejoin: miter"/>
    </g>
    <g id="text_6">
     <!-- small patch $dS$ of the sphere -->
@@ -1213,10 +1213,10 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="pa251d553ac">
+  <clipPath id="pbe1a17e0da">
    <rect x="15.496364" y="22.44" width="162.327273" height="162.327273"/>
   </clipPath>
-  <clipPath id="pf3d44966fb">
+  <clipPath id="pc19db93ed7">
    <rect x="210.289091" y="24.976364" width="162.327273" height="157.254545"/>
   </clipPath>
  </defs>
