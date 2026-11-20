@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-20T14:51:27.436834</dc:date>
+    <dc:date>2026-11-20T14:57:09.850974</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -37,7 +37,7 @@ L 387.521053 24.331579
 L 366.963158 10.626316 
 L 339.552632 10.626316 
 z
-" clip-path="url(#pc18c187b7f)" style="fill: #cdbb9c; stroke: #cdbb9c; stroke-linejoin: miter"/>
+" clip-path="url(#peb55834250)" style="fill: #cdbb9c; stroke: #cdbb9c; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
     <path d="M 14.052632 147.678947 
@@ -45,7 +45,7 @@ L 79.152632 147.678947
 L 99.710526 79.152632 
 L 14.052632 79.152632 
 z
-" clip-path="url(#pc18c187b7f)" style="fill: #cdbb9c; stroke: #cdbb9c; stroke-linejoin: miter"/>
+" clip-path="url(#peb55834250)" style="fill: #cdbb9c; stroke: #cdbb9c; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
     <path d="M 181.942105 120.268421 
@@ -54,17 +54,17 @@ L 318.994737 31.184211
 L 181.942105 31.184211 
 L 181.942105 120.268421 
 z
-" clip-path="url(#pc18c187b7f)" style="fill: none; stroke-dasharray: 3.33,1.44; stroke-dashoffset: 0; stroke: #60726a; stroke-width: 0.9; stroke-linejoin: miter"/>
+" clip-path="url(#peb55834250)" style="fill: none; stroke-dasharray: 3.33,1.44; stroke-dashoffset: 0; stroke: #60726a; stroke-width: 0.9; stroke-linejoin: miter"/>
    </g>
    <g id="line2d_1">
     <path d="M 318.994737 120.268421 
 L 318.994737 31.184211 
-" clip-path="url(#pc18c187b7f)" style="fill: none; stroke: #1d7165; stroke-width: 3; stroke-linecap: square"/>
+" clip-path="url(#peb55834250)" style="fill: none; stroke: #1d7165; stroke-width: 3; stroke-linecap: square"/>
    </g>
    <g id="line2d_2">
     <path d="M 181.942105 120.268421 
 L 181.942105 31.184211 
-" clip-path="url(#pc18c187b7f)" style="fill: none; stroke: #1d7165; stroke-width: 3; stroke-linecap: square"/>
+" clip-path="url(#peb55834250)" style="fill: none; stroke: #1d7165; stroke-width: 3; stroke-linecap: square"/>
    </g>
    <g id="text_1">
     <!-- West -->
@@ -1068,7 +1068,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="pc18c187b7f">
+  <clipPath id="peb55834250">
    <rect x="7.2" y="7.2" width="390.6" height="166.176316"/>
   </clipPath>
  </defs>

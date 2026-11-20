@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-20T14:51:28.744395</dc:date>
+    <dc:date>2026-11-20T14:57:10.010036</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -37,7 +37,7 @@ L 247.956491 21.50308
 L 18.171429 21.50308 
 L 18.171429 94.645938 
 z
-" clip-path="url(#p57bebbc171)" style="fill: none; stroke: #60726a; stroke-linejoin: miter"/>
+" clip-path="url(#p1023079de2)" style="fill: none; stroke: #60726a; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
     <path d="M 18.171429 72.622203 
@@ -45,7 +45,7 @@ L 247.956491 72.622203
 L 247.956491 43.526815 
 L 18.171429 43.526815 
 z
-" clip-path="url(#p57bebbc171)" style="fill: #1d7165; opacity: 0.45"/>
+" clip-path="url(#p1023079de2)" style="fill: #1d7165; opacity: 0.45"/>
    </g>
    <g id="patch_4">
     <path d="M 18.171429 217.160223 
@@ -54,7 +54,7 @@ L 247.956491 144.017366
 L 18.171429 144.017366 
 L 18.171429 217.160223 
 z
-" clip-path="url(#p57bebbc171)" style="fill: none; stroke: #60726a; stroke-linejoin: miter"/>
+" clip-path="url(#p1023079de2)" style="fill: none; stroke: #60726a; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
     <path d="M 18.171429 190.11362 
@@ -62,17 +62,17 @@ L 247.956491 190.11362
 L 247.956491 171.063969 
 L 18.171429 171.063969 
 z
-" clip-path="url(#p57bebbc171)" style="fill: #1d7165; opacity: 0.45"/>
+" clip-path="url(#p1023079de2)" style="fill: #1d7165; opacity: 0.45"/>
    </g>
    <g id="line2d_1">
     <path d="M 18.171429 58.074509 
 L 247.956491 58.074509 
-" clip-path="url(#p57bebbc171)" style="fill: none; stroke-dasharray: 2.22,0.96; stroke-dashoffset: 0; stroke: #60726a; stroke-width: 0.6"/>
+" clip-path="url(#p1023079de2)" style="fill: none; stroke-dasharray: 2.22,0.96; stroke-dashoffset: 0; stroke: #60726a; stroke-width: 0.6"/>
    </g>
    <g id="line2d_2">
     <path d="M 18.171429 180.588795 
 L 247.956491 180.588795 
-" clip-path="url(#p57bebbc171)" style="fill: none; stroke-dasharray: 2.22,0.96; stroke-dashoffset: 0; stroke: #60726a; stroke-width: 0.6"/>
+" clip-path="url(#p1023079de2)" style="fill: none; stroke-dasharray: 2.22,0.96; stroke-dashoffset: 0; stroke: #60726a; stroke-width: 0.6"/>
    </g>
    <g id="text_1">
     <!-- equal-area map (the unrolled cylinder) -->
@@ -911,7 +911,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p57bebbc171">
+  <clipPath id="p1023079de2">
    <rect x="7.2" y="14.188795" width="460.8" height="230.4"/>
   </clipPath>
  </defs>

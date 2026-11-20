@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-20T14:51:35.601975</dc:date>
+    <dc:date>2026-11-20T14:57:17.486912</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -35,22 +35,22 @@ z
 L 99.31921 48.070899 
 L 127.933403 48.070899 
 z
-" clip-path="url(#pa253caf77d)" style="fill: #f3ead6; stroke: #f3ead6; stroke-linejoin: miter"/>
+" clip-path="url(#p1f8148355f)" style="fill: #f3ead6; stroke: #f3ead6; stroke-linejoin: miter"/>
    </g>
    <g id="line2d_1">
     <path d="M 127.933403 191.141867 
 L 127.933403 48.070899 
-" clip-path="url(#pa253caf77d)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #60726a; stroke-width: 2"/>
+" clip-path="url(#p1f8148355f)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #60726a; stroke-width: 2"/>
    </g>
    <g id="line2d_2">
     <path d="M 127.933403 191.141867 
 L 99.31921 48.070899 
-" clip-path="url(#pa253caf77d)" style="fill: none; stroke: #1d7165; stroke-width: 3.5; stroke-linecap: square"/>
+" clip-path="url(#p1f8148355f)" style="fill: none; stroke: #1d7165; stroke-width: 3.5; stroke-linecap: square"/>
    </g>
    <g id="line2d_3">
     <path d="M 36.367984 191.141867 
 L 190.884629 191.141867 
-" clip-path="url(#pa253caf77d)" style="fill: none; stroke: #60726a; stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#p1f8148355f)" style="fill: none; stroke: #60726a; stroke-width: 0.8; stroke-linecap: square"/>
    </g>
    <g id="patch_3">
     <path d="M 185.16179 162.527673 
@@ -91,7 +91,7 @@ L 59.101748 74.685093
    <g id="line2d_4">
     <path d="M 99.31921 48.070899 
 L 127.933403 48.070899 
-" clip-path="url(#pa253caf77d)" style="fill: none; stroke-dasharray: 1,1.65; stroke-dashoffset: 0; stroke: #173d38"/>
+" clip-path="url(#p1f8148355f)" style="fill: none; stroke-dasharray: 1,1.65; stroke-dashoffset: 0; stroke: #173d38"/>
    </g>
    <g id="text_1">
     <!-- top strip: nothing crosses -->
@@ -957,7 +957,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="pa253caf77d">
+  <clipPath id="p1f8148355f">
    <rect x="47.813661" y="22.318125" width="277.557677" height="177.408"/>
   </clipPath>
  </defs>

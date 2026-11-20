@@ -75,16 +75,21 @@ for(const form of document.querySelectorAll('[data-answer-form]')){
  form.addEventListener('submit',event=>{event.preventDefault();const value=currentInput(id),result=AnswerChecker.check(q,value);state.answers[id]={value,checked:!result.invalid};feedback(id,result);save();updateProgress();});
  form.addEventListener('input',()=>{state.answers[id]={value:currentInput(id),checked:false};feedback(id,null);save();updateProgress();});
 }
-// Videos: replace a card's play button with a privacy-enhanced YouTube player only when clicked.
+// Videos: replace a card's play button with a YouTube player only when clicked. (The youtube-nocookie.com domain gave
+// "error 153" for visitors, so the standard youtube.com embed is used; nothing loads before a click.)
 for(const card of document.querySelectorAll('.video-card')){
  const play=card.querySelector('.video-play');if(!play)continue;
  play.addEventListener('click',()=>{
   const id=card.dataset.videoId,start=Number(card.dataset.videoStart)||0;
   if(!/^[A-Za-z0-9_-]{11}$/.test(id))return;
+  // YouTube refuses to play ("error 153") when the page sends no referrer, as with a copy opened from disk (file://).
+  // In that case open the video on YouTube itself instead of embedding it.
+  if(location.protocol!=='http:'&&location.protocol!=='https:'){window.open('https://www.youtube.com/watch?v='+id+(start?'&t='+start+'s':''),'_blank','noopener');return;}
   const frame=document.createElement('iframe');
-  frame.src='https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1&rel=0'+(start?'&start='+start:'');
+  frame.referrerPolicy='strict-origin-when-cross-origin';
+  frame.src='https://www.youtube.com/embed/'+id+'?autoplay=1&rel=0&playsinline=1&origin='+encodeURIComponent(location.origin)+(start?'&start='+start:'');
   frame.title=card.dataset.videoTitle||'Video';frame.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
-  frame.allowFullscreen=true;frame.referrerPolicy='strict-origin-when-cross-origin';
+  frame.allowFullscreen=true;
   const box=document.createElement('div');box.className='video-frame';box.append(frame);
   play.replaceWith(box);card.classList.add('playing');
  });
