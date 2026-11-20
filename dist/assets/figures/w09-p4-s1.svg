@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-20T10:46:49.729250</dc:date>
+    <dc:date>2026-11-20T14:45:23.214156</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -232,7 +232,7 @@ L 136.011792 108.052907
 L 136.083156 106.547222 
 L 136.106952 105.040035 
 z
-" clip-path="url(#p21322617f7)" style="fill: #ffffff"/>
+" clip-path="url(#p955f28cca8)" style="fill: #ffffff"/>
    </g>
    <g id="patch_3">
     <path d="M 136.106952 105.040035 
@@ -636,17 +636,17 @@ L 129.341051 102.448965
 L 129.402423 103.743854 
 L 129.422888 105.040035 
 z
-" clip-path="url(#p21322617f7)" style="fill: #1d7165; stroke: #1d7165; stroke-linejoin: miter"/>
+" clip-path="url(#p955f28cca8)" style="fill: #1d7165; stroke: #1d7165; stroke-linejoin: miter"/>
    </g>
    <g id="line2d_1">
     <path d="M 88.363636 157.557682 
 L 88.363636 120.317896 
-" clip-path="url(#p21322617f7)" style="fill: none; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: #60726a"/>
+" clip-path="url(#p955f28cca8)" style="fill: none; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: #60726a"/>
    </g>
    <g id="line2d_2">
     <path d="M 88.363636 89.762174 
 L 88.363636 45.360891 
-" clip-path="url(#p21322617f7)" style="fill: none; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: #60726a"/>
+" clip-path="url(#p955f28cca8)" style="fill: none; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: #60726a"/>
    </g>
    <g id="text_1">
     <!-- $I=\frac{2}{3}mR^2\approx0.53$ kg·m$^2$ -->
@@ -1481,17 +1481,17 @@ L 330.80452 108.052907
 L 330.875883 106.547222 
 L 330.899679 105.040035 
 z
-" clip-path="url(#pd56174b174)" style="fill: #cdbb9c; stroke: #cdbb9c; stroke-linejoin: miter"/>
+" clip-path="url(#pd6fd3b245a)" style="fill: #cdbb9c; stroke: #cdbb9c; stroke-linejoin: miter"/>
    </g>
    <g id="line2d_3">
     <path d="M 283.156364 157.557682 
 L 283.156364 120.317896 
-" clip-path="url(#pd56174b174)" style="fill: none; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: #60726a"/>
+" clip-path="url(#pd6fd3b245a)" style="fill: none; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: #60726a"/>
    </g>
    <g id="line2d_4">
     <path d="M 283.156364 89.762174 
 L 283.156364 45.360891 
-" clip-path="url(#pd56174b174)" style="fill: none; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: #60726a"/>
+" clip-path="url(#pd6fd3b245a)" style="fill: none; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: #60726a"/>
    </g>
    <g id="text_3">
     <!-- $I=\frac{2}{5}mR^2\approx0.32$ kg·m$^2$ -->
@@ -1742,10 +1742,10 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p21322617f7">
+  <clipPath id="p955f28cca8">
    <rect x="7.2" y="42.973725" width="162.327273" height="145.617112"/>
   </clipPath>
-  <clipPath id="pd56174b174">
+  <clipPath id="pd6fd3b245a">
    <rect x="201.992727" y="42.973725" width="162.327273" height="145.617112"/>
   </clipPath>
  </defs>

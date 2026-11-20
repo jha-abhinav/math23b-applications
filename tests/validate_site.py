@@ -55,6 +55,11 @@ for week in data['weeks']:
  assert sum(not p['extension'] for p in week['problems'])==4
  for p in week['problems']:
   assert p['discussionSolution'] and p['model'] and all(k in data['sources'] for k in p['sources'])
+  html_text=(DIST/f'week-{n:02d}.html').read_text()
+  for v in p.get('videos',[]):  # click-to-load cards only: no YouTube request until a student presses play
+   assert re.fullmatch(r'[A-Za-z0-9_-]{11}',v['id']) and f'data-video-id="{v["id"]}"' in html_text,(p['id'],'video card missing',v['id'])
+ page_html=(DIST/f'week-{n:02d}.html').read_text()
+ assert '<iframe' not in page_html and 'youtube.com/embed' not in page_html and 'ytimg.com' not in page_html,(n,'page loads YouTube before a click')
  for suffix in ('','_solutions'):
   pdf=DIST/'downloads'/f'application_worksheet_week_{n:02d}{suffix}.pdf'
   assert pdf.read_bytes().startswith(b'%PDF-'),pdf
